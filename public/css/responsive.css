@@ -1,0 +1,1089 @@
+@media  (max-width:1700px){
+    html{font-size: 55% !important;}
+    .rt-beirutelogo{width: 180px;}
+    .rt-about-bannercontent{
+        width: 50%;
+    }
+    .rt-lastestnews{
+        padding: 120px 100px 100px;
+    }
+    .rt-eventbanner{
+        height: auto;
+        min-height: 720px;
+    }
+    .rt-addnav ul li a {
+        height: 50px;
+        font-size: 12px;
+        min-width: 170px;
+        line-height: 15px;
+        padding: 16px 20px;
+    }
+    .rt-servicescontent{
+        padding: 70px 60px;
+    }
+    .rt-offerspromotions-content{
+        grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    }
+    .rt-promotions-content{
+        min-height: 540px;
+    }
+    .rt-wrapper{padding: 114px 0 0;}
+    .rt-locations {
+        height: calc(100vh - 446px);
+    }
+}
+@media (max-width:1660px){
+    .rt-menuholder{
+        padding: 120px 0;
+    }
+}
+@media (max-width:1600px){
+    .rt-locations {
+        height: calc(100vh - 428px);
+    }
+	html{font-size: 50% !important;}
+    .mac .rt-btn{line-height: 20px;}
+    .rt-sidebarwrapper{
+        width: 450px;
+        padding: 50px 50px 20px;
+    }
+    .rt-orderholder {padding: 30px 30px 0 30px;}
+    .rt-addmenu {
+        padding: 0 30px 0 30px;
+        width: calc(100% - 600px);
+    }
+    .rt-btn{
+        height: 50px;
+        font-size: 16px;
+        line-height: 18px;
+        padding: 15px 30px;
+    }
+    /* .rt-menuholder {
+        padding: 160px 0;
+    } */
+    .rt-header{padding: 0 30px;}
+    .rt-locationpageheader{padding: 30px;}
+    .rt-headervtwo{padding: 20px 30px;}
+    .rt-cardcontent ul li span {
+        float: left;
+        color: #fff;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: normal;
+        width: calc(100% - 32px);
+        font-family: 'Product Sans';
+    }
+    .rt-cardcontent ul li i {
+        float: left;
+        color: #fff;
+        font-size: 24px;
+        line-height: 21px;
+        padding: 0 8px 0 0;
+    }
+    .rt-menutitle p {
+        font-size: 15px;
+        line-height: 19px;
+    }
+    .rt-yourordersidebar,
+    .rt-cetagorysidebar {width: 300px;}
+    .rt-eventbanner {
+        min-height: 680px;
+    }
+    .rt-about-bannercontent{
+        width: 60%;
+    }
+    .rt-about-bannercontent p{
+        font-size: 3.4rem;
+    }
+    .rt-menuholder .rt-description p{
+        font-size: 2.8rem;
+    }
+    .rt-sectiontitle span{
+        margin-top: -20px;
+    }
+    /* .rt-hosteventimage{
+        max-width: 580px;
+    }
+    .rt-hostpatterenimg{
+        height: 583px;
+    } */
+    .rt-about-bannercontent{
+        padding: 140px 115px 50px 100px;
+    }
+    .rt-morenews-btn i::before{top: 7px;}
+    .rt-learnmorebtn i::before{top: 3px;}
+    .rt-contactushoder {
+        padding: 60px 0 0;
+    }
+}
+@media (max-width:1500px){
+    .rt-menuholder {
+        padding: 100px 0;
+    }
+}
+@media (max-width:1450px){
+    .rt-homepageheader {
+        top: 30px;
+        padding: 0 40px;
+    }
+    .rt-btnsidebar {
+        width: 50px;
+        font-size: 35px;
+        line-height: 0;
+        padding: 6px 0;
+    }
+    .rt-homepageheader .rt-btnsidebar{
+        padding: 0;
+        font-size: 35px;
+        line-height: 35px;
+    }
+    .rt-banner{height: auto;}
+    .rt-homepageheader .rt-beirutelogo {
+        width: 170px;
+        margin: -20px auto;
+    }
+    .rt-addnav ul li .rt-select select{
+        height: 45px;
+        font-size: 16px;
+        border-radius: 4px;
+        padding: 0 30px 0 10px;
+    }
+    .rt-addnav ul li .rt-select:after{
+        right: 8px;
+        font-size: 10px;
+        line-height: 45px;
+    }
+    .rt-reviewimg{height: 360px;}
+    .rt-footer{padding: 10px 50px;}
+    .rt-footerleftarea ul li a {
+        color: #fff;
+        display: block;
+        font-size: 30px;
+        line-height: 24px;
+    }
+    .rt-footerrightarea{padding: 7px 0;}
+    .rt-footerrightarea ul li a{
+        font-size: 18px;
+        line-height: 19px;
+    }
+    .rt-wrapper {
+        padding: 107px 0 0;
+    }
+    .rt-locationimg {
+        height: calc(100vh - 154px);
+    }
+    .rt-locations {
+        height: calc(100vh - 407px);
+    }
+    .rt-catering-holder{
+        max-width: 1000px;
+    }
+    .rt-servicescontent{
+        padding: 70px;
+    }
+    .rt-cateringbanner,
+    .rt-eventbanner{
+        min-height: 600px;
+    }
+    .rt-servicescontent {
+        padding: 70px 40px;
+    }
+    .rt-btnarea .rt-btn {
+        margin: 0 10px;
+    }
+    .rt-beirutelogo{
+        width: 150px;
+    }
+    .rt-btnclose{
+        font-size: 25px;
+    }
+    .rt-about-bannercontent{
+        padding: 130px 115px 50px 100px;
+    }
+    .rt-promotions-content {
+        min-height: auto;
+    }
+    .rt-lastestnews {
+        padding: 120px 100px 50px;
+    }
+    .rt-offersandpromotions {
+        padding: 50px 95px 100px;
+    }
+    .rt-offersandpromotions .rt-sectiontitle {
+        margin: 0 0 50px;
+    }
+    .rt-addnav,
+    .rt-menudropdown{padding: 0;}
+    .rt-enquiry{padding: 40px 0;}
+}
+@media (max-width:1420px){
+    html{font-size: 40% !important;}
+    .rt-btndropdown img{width: 50px;}
+    .rt-btndropdown::after {
+        top: 16px;
+        width: 22px;
+        right: -30px;
+        height: 17px;
+        background-size: contain;
+    }
+    .rt-morenews-btn i::before {top: 6px;}
+    .rt-learnmorebtn i::before {
+        top: 1px;
+        width: 20px;
+        right: -28px;
+    }
+    .rt-menudropdown{padding: 7px 0;}
+    .rt-promotions-content h3,
+    .rt-timeandday{margin-bottom: 30px;}
+    .rt-locationimg {
+        height: calc(100vh - 164px);
+    }
+}
+@media (max-width:1366px){
+    .rt-locations {
+        height: calc(100vh - 415px);
+    }
+    .rt-offerspromotions-content{
+        grid-template-columns: repeat(auto-fill, minmax(470px, 1fr));
+    }
+    .rt-description p,
+    .rt-menuholder .rt-description p,
+    .rt-enquiryform p,
+    .rt-sectiontitletwo .rt-description p,
+    .rt-servicescontent .rt-description p{
+        font-size: 20px;
+    }
+    .rt-hostyoureventarea{
+        padding: 0 30px;
+    }
+   
+
+    .rt-cardtitle h3{
+        font-size: 20px;
+    }
+    .rt-formtheme label,
+    .rt-formtheme .form-control,
+    .rt-subcribefrom .form-control{
+        font-size: 20px !important;
+    }
+    .rt-formtheme label{
+        margin-bottom: 5px;
+    }
+    .rt-enquiryholder{
+        padding: 0 30px;
+    }
+    .rt-btnarea .rt-btn {
+        margin: 0;
+        font-size: 16px;
+        min-width: 200px;
+        line-height: 16px;
+        padding: 15px 30px;
+    }
+    .rt-servicescontent .rt-sectiontitle h2{
+        font-size: 5.5rem;
+    }
+    .rt-offersandpromotions{
+        padding: 50px 95px 80px;
+    }
+    .rt-lastestnews {
+        padding: 100px 100px 50px;
+    }
+    .rt-locationcard figcaption i:before {
+        top: -50px;
+        width: 43px;
+        height: 63px;
+        background-size: contain;
+    }
+}
+@media (max-width:1280px){
+    .rt-about-bannercontent {
+        padding: 100px 115px 50px 100px;
+    }
+    
+}
+@media (max-width:1199px){
+    .rt-menudropdown{
+        padding-top: 0;
+    }
+    .rt-homepageheader .rt-btnsidebar{padding: 10px 0;}
+	.rt-menu{padding: 20px 0;}
+    .rt-banner{min-height: 500px;}
+    .rt-bannervtwo{
+        height: 400px;
+        min-height: auto;
+    }
+    .rt-yourordersidebar{
+        width: 100%;
+        padding: 0 0 30px;
+    }
+    .rt-addmenu {
+        padding: 0 0 0 30px;
+        width: calc(100% - 300px);
+    }
+    .rt-homepageheader .rt-addnav ul li:first-child{
+        float: left;
+    }
+    .rt-homepageheader .rt-addnav ul li:nth-child(2){
+        float: right;
+    }
+    /* .rt-homepageheader .rt-addnav ul li:last-child{
+        top: 0;
+        width: auto;
+        right: 35px;
+        position: absolute; 
+    }*/
+    /* .rt-homepageheader .rt-addnav {
+        width: 100%;
+    } */
+    .rt-homepageheader {
+        top: 30px;
+        padding: 0 30px;
+    }
+    .rt-homepageheader .rt-beirutelogo {
+        width: 110px;
+        margin: -23px auto;  
+    }
+    /* .rt-homepageheader .rt-btnsidebar {
+        padding: 0;
+    } */
+    .rt-reviewimg {height: 290px;}
+    .rt-addnav{
+        padding: 0;
+    }
+    .rt-about-bannercontent {
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.4);
+        padding: 100px 50px 50px 50px;
+    }
+    .rt-subcribe{
+        padding: 40px 50px 40px;
+    }
+    .rt-catering-holder{
+        padding: 0 100px;
+    }
+    .order-1{
+        order: 2;
+    }
+    .order-2{
+        order: 1;
+    }
+    .order-5{
+        order: 6;
+    }
+    .order-6{
+        order: 5;
+    }
+    .rt-servicesimage{
+        height: 600px;
+    }
+    .rt-servicesimage img{
+        height: 100%;
+        object-fit: cover;
+    }
+    .rt-lastestnews {
+        padding: 30px 50px 50px;
+    }
+    .rt-news-contentarea .p-37add{
+        padding: 0 20px;
+    }
+    .rt-news-contentarea .m-37minas {
+        margin: 0 -20px;
+    }.rt-offersandpromotions {
+        padding: 50px 50px 80px;
+    }
+    .rt-offerspromotions-content {
+        grid-template-columns: repeat(auto-fill, minmax(415px, 1fr));
+    }
+}
+@media (max-width:1080px){
+	.rt-menutabsholder ul li{width: 25%;}
+}
+@media (max-width:1024px){
+	.rt-beirutimg{padding: 0 100px;}
+}
+@media (max-width:991px){
+    .rt-menuholder {
+        min-height: auto;
+        display: block;
+        float: left;
+    }
+    .rt-aboutusimage::after{display: none;}
+    .rt-header {
+        padding: 0 20px;
+    }
+    .rt-innerpageheader{
+        padding: 0 30px;
+    }
+    .rt-sectionspace{padding: 30px 0;}
+    .rt-menuholder{
+        padding: 0 0 30px;
+        text-align: center;
+    }
+    .rt-menuimage{height: auto;}
+    .rt-sliderarea{padding: 0 10px;}
+    .owl-carousel {padding: 0 40px;}
+    /* .owl-prev, .owl-next {
+        margin: 0 !important;
+        width: 40px !important;
+        height: 40px !important;
+        color: #fff !important;
+        line-height: 40px !important;
+        background: #fff !important;
+        border-radius: 50% !important;
+        text-align: center !important;
+    } */
+    .owl-prev:after{
+        width: 23px;
+        height: 37px;
+    }
+    .owl-next:after {
+        left: -20px;
+        width: 23px;
+        height: 37px;
+    }
+    .rt-footer{padding: 20px;}
+    .rt-footerleftarea ul li a {
+        color: #fff;
+        display: block;
+        font-size: 30px;
+        line-height: 19px;
+    }
+    .rt-footerrightarea ul li a {
+        font-size: 16px;
+    }
+    .rt-footerrightarea ul li,
+    .rt-footerleftarea ul li{padding: 0 10px;}
+    .rt-footerrightarea ul li:last-child,
+    .rt-footerleftarea ul li:last-child {
+        padding: 0 0 0 10px;
+    }
+    .rt-footerrightarea ul li:first-child,
+    .rt-footerleftarea ul li:first-child {
+        padding: 0 10px 0 0;
+    }
+    .rt-headervtwo{padding: 20px;}
+    .rt-headervtwo .rt-btnsidebar {
+        padding: 5px 0 0;
+    }
+    /* .rt-wrapper {
+        padding: 192px 0 0;
+    } */
+    .rt-menucontent{padding: 0 30px 30px;}
+    .rt-menutabsholder ul{margin: 0 0 30px;}
+    .rt-menuprice{
+        right: 30px;
+        font-size: 18px;
+    }
+    .rt-menuimg {
+        width: 90px;
+        height: 90px;
+        margin: 0 10px 0 0;
+    }
+    .rt-menutitle {
+        padding: 0 130px 0 0;
+        width: calc(100% - 100px);
+    }
+    .rt-cateringholder .rt-description p, 
+    .rt-aboutus .rt-description p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .rt-btncloselocationsidebar,
+    .rt-btncloselocation{
+        display: block;
+    }
+    .rt-columtwo{width: 100%;}
+    .rt-columone{
+        top: 0;
+        z-index: 11;
+        left: -450px;
+        position: absolute;
+        -webkit-transition: all 400ms ease;
+        -moz-transition: all 400ms ease;
+        -ms-transition: all 400ms ease;
+        -o-transition: all 400ms ease;
+        transition: all 400ms ease;
+    }
+    .rt-addmenu{
+        width: 100%;
+        padding: 0;
+    }
+    .rt-cetagorysidebar{
+        width: 100%;
+    }
+    .rt-locationimg {
+        height: calc(100vh - 183px);
+    }
+    .rt-locations {
+        height: calc(100vh - 435px);
+    }
+    .rt-homepageheader .rt-beirutelogo {
+        width: 100%;
+        float: left;
+        margin: 10px 0 0;
+    }
+    .rt-beirutelogo a{
+        width: 150px;
+        margin: 0 auto;
+    }
+    .rt-patterenleftimage,
+    .rt-patterenrightimage{
+        display: none;
+    }
+    .rt-menuimage{
+        padding: 50px;
+    }
+    .rt-about-bannercontent {
+        padding: 80px 30px 50px 30px;
+    }
+    .rt-aboutusimage{
+        height: 550px;
+    }
+    .rt-aboutusimage img{
+        height: 100%;
+        object-fit: cover;
+    }
+    .rt-subcribe {
+        text-align: center;
+        padding: 30px;
+    }
+    .rt-wrapper {
+        padding: 250px 0 0;
+    }
+    .rt-innerpageheader .rt-menudropdown {
+        padding: 30px 0;
+    }
+    .rt-innerpageheader .rt-addnav {
+        padding: 33px 0;
+    }
+    .rt-innerpageheader .rt-beirutelogo{
+        left: 110px;
+        width: 110px;
+        position: absolute;
+    }
+    .rt-innerpageheader .rt-beirutelogo a{
+        width: 100%;
+    }
+    .rt-cateringbanner {
+        min-height: 400px;
+    }
+    .rt-catering{
+        padding: 100px 0;
+    }
+    .rt-lastestnews {
+        padding: 50px 30px 50px;
+    }
+    .rt-navtabs .nav-item{
+        font-size: 3.5rem;
+    }
+    .rt-promotions-content {
+        padding: 50px 30px 50px 50px;
+    }
+    .rt-offersandpromotions {
+        padding: 50px 30px 80px;
+    }
+    .rt-timeandday{
+        margin-bottom: 40px;
+    }
+    .rt-promotions-content h3{
+        margin-bottom: 40px;
+    }
+    .rt-timeandday span,
+    .rt-timeandday em,
+    .rt-locationinfo,
+    .rt-learnmorebtn{
+        font-size: 18px;
+    }
+    .rt-offerspromotions-content {
+        grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+        grid-gap: 30px;
+    }
+    .rt-morenews-btn{
+        font-size: 20px;
+    }
+    .rt-navtabs-area{
+        overflow: hidden;
+    }
+    .rt-navtabs{
+        width: 940px;
+        display: block;
+        max-width: 100%;
+        overflow-x: scroll;
+        white-space: nowrap;
+    }
+        /* width */
+    .rt-navtabs::-webkit-scrollbar {
+        width: 0;
+    }
+    .rt-navtabs .nav-item{
+        margin: 0 30px;
+        font-size: 4rem;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .rt-btnarea .rt-btn{
+        font-size: 14px;
+        line-height: 14px;
+        padding: 15px 20px;
+    }
+    .rt-btndropdown::after {
+        top: 10px;
+        width: 22px;
+        right: -30px;
+        height: 16px;
+        background-size: contain;
+    }
+    .rt-langdropdown img{
+        width: 40px;
+    }
+    .rt-langdropdown{padding: 0 0 0 20px;}
+    .rt-locationwrapper{padding: 105px 0 0;}
+    .rt-banner {
+        min-height: 600px;
+    }
+}
+@media (max-width:800px){
+    html{font-size: 30% !important;}
+    .rt-sidebarwrapper {
+        width: 290px;
+        padding: 20px;
+    }
+    .rt-btnclose{
+        font-size: 20px;
+    }
+    .rt-logo {
+        width: 70px;
+        margin: 0 0 30px;
+        display: inline-block;
+    }
+    .rt-btn{
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .rt-btnreservation{
+        min-width: 100%;
+    }
+    .rt-nav ul li{padding: 10px 0;}
+    /* .rt-addnav {
+        width: 100%;
+        padding: 20px 0 0;
+    }
+    .rt-homepageheader .rt-addnav{padding: 0;} */
+    /* .rt-addnav ul li{
+        width: 50%;
+    }
+    .rt-addnav ul li:last-child{
+        width: auto;
+        position: absolute;
+        top: 0;
+        right: 35px;
+    } */
+    .rt-addnav ul li a{
+        min-width: 100% !important;
+        /* font-size: 14px;
+        padding: 0 10px; */
+    }
+    .rt-headervtwo .rt-addnav ul li:last-child {
+        width: auto;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+    }
+    .rt-locationcard figcaption i:before {
+        top: -30px;
+        width: 33px;
+        height: 43px;
+    }
+}
+@media (max-width:767px){
+    .mac .rt-addnav ul li a{padding: 15px 20px 0;}
+    .rt-select:after{line-height: 45px;}
+    .rt-hostpatterenimg{display: none;}
+    .rt-header{top: 30px;}
+    .rt-innerpageheader {
+        top: 0;
+    }
+    .rt-btnsidebar {padding: 5px 0 20px;}
+    /* .rt-homepageheader .rt-beirutelogo {
+        width: 80px;
+        margin: -20px auto;
+    } */
+    .rt-addnav ul li:last-child{right: 20px;}
+    .rt-select select{
+        height: 45px;
+        font-size: 14px;
+        padding: 0 30px 0 10px;
+    }
+    .rt-addnav ul li a{
+        /* font-size: 10px; */
+        height: 45px;
+        padding: 13px 20px;
+    }
+    .rt-beirutimg {padding: 0 30px;}
+    .rt-beirutimg{
+        margin: 200px auto 0; 
+    }
+    .rt-btnsidebar{font-size: 30px;}
+    .rt-headervtwo{top: 0;}
+    /* .rt-wrapper {
+        padding: 142px 0 0;
+    } */
+    .rt-inputwidthicon select{
+        padding: 10px 40px 10px 50px;
+    }
+    .rt-inputwidthicon input{height: 45px;}
+    /* .rt-homepageheader .rt-btnsidebar {
+        padding: 5px 0 20px;
+    } */
+    .rt-locationimg {
+        height: calc(100vh - 185px);
+    }
+    .rt-btncloselocationsidebar, 
+    .rt-btncloselocation{font-size: 20px;}
+    .rt-locations {
+        height: calc(100vh - 415px);
+    }
+    .rt-menutabsholder ul li a{
+        font-size: 18px;
+        line-height: 50px;
+    }
+    .rt-catering {
+        padding: 70px 0;
+    }
+    .rt-hosteventimage {
+        max-width: 100%;
+        padding: 10px 0;
+    }
+    .rt-catering-holder{
+        padding: 0 30px;
+    }
+    .rt-catering::before,
+    .rt-catering::after{
+        background: transparent;
+    }
+    .rt-btnarea .rt-btn {
+        font-size: 15px;
+        line-height: 15px;
+        padding: 15px 20px;
+    }
+    .rt-btnarea .rt-btn:first-child{
+        margin-right: 5px;
+    }
+    .rt-private-events .rt-btnarea .rt-btn:first-child{
+        margin-right: 20px;
+    }
+    .rt-offersandpromotions .rt-sectiontitle h2{
+        line-height: 1.3;
+    }
+    .rt-lastestnews-content h3{
+        font-size: 5rem;
+    }
+    .rt-servicescontent .rt-btnarea .rt-btn:first-child{
+        margin-right: 20px;
+
+    }
+    .rt-banner{
+        background: url(../images/banner/banner-img.jpg) no-repeat;
+        background-size: cover;
+        background-position: bottom;
+    }
+    .rt-bannerimage{display: block !important;}
+    .rt-banner {
+        min-height: 500px;
+    }
+}
+@media (max-width:640px){
+    .rt-inputwidthhalf{margin: 0;}
+    .rt-inputwidthhalf .form-group{
+        width: 100%;
+        margin: 0 0 20px;
+    }
+    .rt-inputwidthhalf .form-group + .form-group{margin: 0 0 20px;}
+    .rt-about-bannercontent {
+        padding: 50px 30px;
+    }
+    .rt-aboutusimage {
+        height: 600px;
+    }
+    .rt-servicescontent .rt-description p{
+        margin-bottom: 20px;
+    }
+    .rt-servicesimage{
+        height: auto;
+    }
+    .rt-btnarea .rt-btn {
+        width: 100%;
+        margin: 0;
+    }
+    .rt-catering .rt-btnarea .rt-btn:first-child,
+    .rt-private-events .rt-btnarea .rt-btn:first-child{
+        margin: 0 0 20px;
+    }
+    .rt-btnarea{
+        flex-direction: column;
+    }
+    .rt-servicescontent .rt-btnarea .rt-btn:first-child {
+        margin: 0 0 20px;
+    }
+}
+@media (max-width:568px){
+	.rt-menuimg {
+        float: none;
+        margin: 0 auto 60px;
+    }
+    .rt-locations {
+        height: calc(100vh - 400px);
+    }
+    .rt-menutitle {
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .rt-menuprice {
+        top: 110px;
+        right: 50%;
+        -moz-transform: translateX(50%);
+        -webkit-transform: translateX(50%);
+        -o-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+        transform: translateX(50%);
+    }
+    .rt-columone{
+        width: 280px;
+    }
+    .rt-btnholdervtwo .rt-btn {
+        width: 100%;
+        margin: 5px 0;
+        /* line-height: 40px; */
+    }
+    .rt-inputwidthicon input {
+        height: 40px;
+        font-size: 14px;
+        border-radius: 8px;
+        padding: 10px 20px 10px 50px;
+    }
+    .rt-inputwidthicon i {
+        left: 8px;
+        width: 18px;
+        font-size: 18px;
+        line-height: 18px;
+    }
+    .rt-searchform {padding: 0 0 20px;}
+    .rt-location{padding: 20px 0;}
+    /* .rt-locationimg {
+        height: calc(100vh - 260px);
+    } */
+    .rt-addmenu .rt-menuprice{
+        right: 50%;
+        top: 140px;
+    }
+    .rt-ordermodaltabs .nav-tabs .nav-item{line-height: 45px;}
+    .rt-orderholder {
+        padding: 20px 20px 0;
+    }
+    .rt-ordertype ul li span {
+        color: #333;
+        font-size: 18px;
+        padding: 10px 0;
+        font-weight: 500;
+        line-height: 24px;
+        display: inline-block;
+        vertical-align: middle;
+        text-transform: capitalize;
+        font-family: 'Product Sans';
+    }
+    .rt-ordertype ul li em {
+        width: 40px;
+        height: 40px;
+        float: left;
+        margin: 0 14px 0 0;
+    }
+    .rt-reviewimg{height: auto;}
+    .rt-aboutusimage{
+        display: none;
+    }
+    .rt-about-bannercontent{
+        position: static;
+        background: #000;
+    }
+    .rt-wrapper {
+        padding: 245px 0 0;
+    }
+    .rt-innerpageheader{
+        background: #32051a;
+    }
+    .rt-innerpageheader .rt-beirutelogo{
+        width: 100%;
+        float: left;
+        position: static;
+    }
+    .rt-innerpageheader .rt-beirutelogo a{
+        width: 100px;
+    }
+    .rt-btnsidebar{
+        width: 40px;
+    }
+    .rt-description p,
+    .rt-menuholder .rt-description p,
+    .rt-sectiontitletwo .rt-description p {
+        font-size: 20px;
+    }
+    .rt-btnarea .rt-btn{
+        margin: 0;
+        width: 100%;
+    }
+    .rt-btnarea .rt-btn:first-child{
+        margin-bottom: 15px;
+    }
+    .rt-catering {
+        padding: 50px 0;
+    }
+    .rt-servicescontent {
+        padding: 50px 30px;
+    }
+    .rt-lastestnews-content{
+        padding: 0;
+    }
+    .rt-offersandpromotions .rt-sectiontitle {
+        margin: 0 0 30px;
+    }
+    .rt-locationwrapper{padding: 105px 0 0;}
+}
+@media (max-width:480px){
+    .rt-footerrightarea,
+	.rt-footerleftarea {
+        float: left;
+        width: 100%;
+        text-align: center;
+    }
+    .rt-footerrightarea ul li, 
+    .rt-footerleftarea ul li {
+        padding: 0 10px;
+        float: none;
+        line-height: inherit;
+        display: inline-block;
+    }
+    .rt-footerrightarea ul li a{line-height: 16px;}
+    .rt-footerrightarea{padding: 10px 0 0;}
+    .rt-menutabsholder ul li {
+        width: 50%;
+    }
+    
+    .rt-homepageheader .rt-addnav ul li a,
+    .rt-addnav ul li a{
+        font-size: 10px;
+        line-height: 10px;
+        padding: 14px 10px;
+    }
+    .rt-menudropdown {
+        padding-top: 4px;
+    }
+    .rt-cateringbanner {
+        min-height: 300px;
+    }
+    .rt-servicescontent {
+        padding: 30px 15px;
+    }
+    .rt-enquiry {
+        padding: 30px 0;
+    }
+    .rt-catering .rt-btnarea .rt-btn{
+        font-size: 14px;
+    }
+    .rt-offerspromotions-content {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+    .rt-offersandpromotions .rt-sectiontitle h2{
+        letter-spacing: normal;
+    }
+    .rt-lastestnews {
+        padding: 50px 30px 20px;
+    }
+    .rt-promotions-content {
+        padding: 30px 20px 30px 30px;
+    }
+    .rt-navtabs{
+        width: 450px;
+    }
+    .rt-btn{
+        min-width: 100%;
+    }
+    .rt-header{padding: 0 10px;}
+    .rt-btnsidebar{width: 30px;}
+    .rt-langdropdown img {width: 30px;}
+    .rt-btndropdown::after {
+        top: 8px;
+        width: 16px;
+        right: -20px;
+        height: 13px;
+        background-size: contain;
+    }
+    .rt-langdropdown{padding: 0 0 0 10px;}
+    .rt-homepageheader .rt-addnav ul li:first-child{padding: 0 3px 0 0;}
+    .rt-homepageheader .rt-addnav ul li:last-child{padding: 0 0 0 3px;}
+    .rt-homepageheader .rt-btnsidebar {padding: 2px 0;}
+    .rt-homepageheader .rt-addnav ul li a, .rt-addnav ul li a {
+        height: 36px;
+        padding: 10px 5px;
+    }
+    .mac .rt-homepageheader .rt-addnav ul li a{padding: 12px 5px 0;}
+    .rt-locationwrapper{padding: 95px 0 0;}
+    .mac .rt-btn {
+        line-height: 20px;
+    }
+}
+@media (max-width:360px){
+    .rt-wrapper {
+        padding: 195px 0 0;
+    }
+    .rt-locationwrapper{padding: 95px 0 0;}
+    .rt-innerpageheader .rt-addnav {
+        width: 100%;
+        padding: 15px 0 0;
+    }
+    .rt-innerpageheader .rt-beirutelogo{
+        left: auto;
+        width: auto;
+        right: 30px;
+        position: absolute;
+    }
+    .rt-innerpageheader .rt-addnav ul{
+        display: flex;
+    }
+    .rt-innerpageheader .rt-addnav ul li{
+        flex: 1;
+    }
+    .rt-subcribe {
+        text-align: center;
+        padding: 50px 20px 50px;
+    }
+    .rt-catering .rt-sectiontitle {
+        margin-bottom: 20px;
+    }
+    .rt-catering .rt-sectiontitle h2{
+        font-size: 6.5rem;
+    }
+    .rt-enquiry .rt-sectiontitle h2{
+        font-size: 6rem;
+    }
+    .rt-formtheme label, .rt-formtheme .form-control, .rt-subcribefrom .form-control {
+        font-size: 18px !important;
+    }
+    .rt-enquiryholder {
+        padding: 0 15px;
+    }
+    .rt-servicescontent .rt-sectiontitle{
+        margin-bottom: 20px;
+    }
+    .rt-catering .rt-btnarea .rt-btn {
+        font-size: 12px;
+    }
+    .rt-offerspromotions-content {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    }
+    .rt-eventbanner{
+        min-height: 350px;
+    }
+}
+@media (max-width:320px){}
