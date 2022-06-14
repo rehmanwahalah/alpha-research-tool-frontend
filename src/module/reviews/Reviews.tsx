@@ -2,6 +2,7 @@ import next from "next";
 import { Fragment } from "react";
 import Header from "../../component/header/Header";
 import Filter from "../../component/filter/Filter";
+import Sidebar from "../../component/sidebar/Sidebar";
 
 
 
@@ -9,8 +10,9 @@ export default function Reviews(){
     return(
         <Fragment>
             <Header />
+            <Sidebar /> 
             <div className="rt-reviews rt-projects">
-                <Filter />
+                {/* <Filter /> */}
                 <div className="rt-review">
                     {/* <div className="rt-eyeicon">
                         <span>

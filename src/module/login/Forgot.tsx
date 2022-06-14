@@ -17,7 +17,7 @@ export default function Forgot(){
                             <label>Email</label>
                             <input type="text" placeholder="Enter Your Email "/>
                         </div>
-                        <Link href="">
+                        <Link href="/reset">
                             <a className="rt-btn rt-btn-lg rt-btnlogin">Reset Password</a>
                         </Link>
                     </fieldset>

@@ -21,7 +21,7 @@ export default function Reset(){
                             <label>Confirm Password</label>
                             <input type="text" placeholder="......... "/>
                         </div>
-                        <Link href="">
+                        <Link href="/login">
                             <a className="rt-btn rt-btn-lg rt-btnlogin">Submit</a>
                         </Link>
                     </fieldset>

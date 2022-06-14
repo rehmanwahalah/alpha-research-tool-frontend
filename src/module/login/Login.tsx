@@ -21,10 +21,10 @@ export default function Login(){
                             <label>Password</label>
                             <input type="text" placeholder="......... "/>
                         </div>
-                        <Link href="">
+                        <Link href="/forgot">
                             <a className="rt-forgotpassword">Forgot Password</a>
                         </Link>
-                        <Link href="">
+                        <Link href="/project">
                             <a className="rt-btn rt-btn-lg rt-btnlogin">Login</a>
                         </Link>
                         <span className="rt-loginwith">or</span>
