@@ -4,10 +4,55 @@
         overflow: auto;
     }
 }
+@media  (max-width:1440px){
+    .rt-notisetting,
+    .rt-profilecontent{
+        width: 100%;
+    }
+}
+@media  (max-width:1340px){
+    .rt-searchform{width: 400px;}
+}
+@media (max-width:991px){
+    .rt-sidebarwrapper{
+        left: -100%;
+    }
+    .rt-btnmenu{display: block;}
+    .rt-projecttableholder{
+        width: 100%;
+    }
+    .rt-header{
+        padding: 18px 20px 18px 40px;
+    }
+}
+@media  (max-width:640px){
+    .rt-searchform{
+        width: 100%;
+        margin: 0 0 16px;
+    }
+    .rt-pagefilterholder,
+    .rt-pagefilterholder button{width: 100%;}
+    .rt-profile,
+    .rt-projects {  
+        padding: 120px 15px 15px;
+    }
+}
 @media  (max-width:568px){
     .rt-login{
         width: 100%;
         padding: 0 15px;
+    }
+    .rt-logo{
+        margin: 2px 0;
+        width: 80px;
+    }
+    .rt-nav ul li{
+        padding: 0 6px;
+    }
+    .rt-addnavigation{padding: 0;}
+    .rt-profile,
+    .rt-projects {  
+        padding: 100px 15px 15px;
     }
 }
 @media (max-width:320px){}

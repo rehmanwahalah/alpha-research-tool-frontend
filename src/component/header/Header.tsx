@@ -7,6 +7,7 @@ import { Dropdown } from "react-bootstrap";
 export default function Header() {
     return (
         <header className="rt-header">
+            <button className="rt-btnmenu"><i className="icon-menu"></i></button>
             <strong className="rt-logo">
                 <Link href="/project">
                     <a>

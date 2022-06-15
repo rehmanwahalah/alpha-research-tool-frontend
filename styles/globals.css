@@ -1046,3 +1046,20 @@ table > tfoot > tr > td {
 	float: left;
 	padding: 0 0 20px;
 }
+.rt-btnmenu{
+	top: 50%;
+	left: 10px;
+	width: 30px;
+	height: 30px;
+	color: #fff;
+	font-size: 30px;
+	background: none;
+	display: none;
+	line-height: 30px;
+	position: absolute;
+	-moz-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
