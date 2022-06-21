@@ -527,6 +527,7 @@ table > tfoot > tr > td {
 	display: inline-block;
 	vertical-align: middle;
 }
+.rt-filterinput input{width: 100%;}
 .rt-filterinput .rt-inputwidthfifty{
 	width: calc(50% - 5px);
 	float: left;
@@ -539,14 +540,14 @@ table > tfoot > tr > td {
 }
 .rt-btnfilter{
 	padding:  20px;
-	width: 100%;
+	width: 100% !important;
 	float: left;
 }
 .rt-btnfilter .rt-btn{
-	width: calc(50% - 10px);
-	margin: 0 10px  0 0;
+	width: calc(50% - 10px) !important;
+	margin: 0 10px  0 0 !important;
 }
-.rt-btnfilter .rt-btn + .rt-btn{margin: 0 0 0 10px;}
+.rt-btnfilter .rt-btn + .rt-btn{margin: 0 0 0 10px !important;}
 .rt-btnclear{
 	background: #1E496F;
 	color: #0D96FD;

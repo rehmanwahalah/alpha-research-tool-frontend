@@ -13,6 +13,26 @@
 @media  (max-width:1340px){
     .rt-searchform{width: 400px;}
 }
+@media (max-width:1199px){
+    .rt-profilecontentholder ul{
+        width: 100%;
+    }
+    .rt-btnholder{
+        width: 100%;
+    }
+    .rt-btnholder .rt-btn{
+        width: calc(50% - 20px);
+        margin: 0 10px 0 0;
+    }
+    .rt-btnholder .rt-btn + .rt-btn{margin: 0 0 0 10px;}
+    .rt-profileimg{
+        float: none;
+        margin: 0 auto 30px;
+    }
+    .rt-profilecontentholder{
+        width: 100%;
+    }
+}
 @media (max-width:991px){
     .rt-sidebarwrapper{
         left: -100%;
@@ -20,9 +40,17 @@
     .rt-btnmenu{display: block;}
     .rt-projecttableholder{
         width: 100%;
+        padding: 10px;
+    }
+    .rt-sectiontitle,
+    .rt-editprofile{
+        padding: 10px;
     }
     .rt-header{
         padding: 18px 20px 18px 40px;
+    }
+    .rt-sectiontitle h2{
+        font-size: 17px;
     }
 }
 @media  (max-width:640px){
@@ -54,5 +82,36 @@
     .rt-projects {  
         padding: 100px 15px 15px;
     }
+    .rt-editprofile .rt-btnholder{
+        width: 100%;
+    }
+    .rt-editprofile .rt-btnholder .rt-btn{
+        width: 100%;
+        margin: 0 0 16px;
+    }
+    .rt-btnholder .rt-btn{
+        width: 100%;
+        margin: 0 0 16px;
+    }
+    .rt-btnholder .rt-btn + .rt-btn{margin: 0;}
+    .rt-profilecontentholder ul li{
+        width: 100%;
+        padding: 0 0 16px;
+    }
+    .rt-filterholder .rt-formtheme .form-group{
+        padding: 10px;
+    }
+    .rt-filterholder .rt-formtheme .form-group label{
+        width: 125px;
+        font-size: 14px;
+    }
+    .rt-filterinput{
+        width: calc(100% - 125px);
+    }
+    .rt-btnfilter .rt-btn{
+        width: 100% !important;
+        margin: 0 0 16px !important;
+    }
+    .rt-btnfilter .rt-btn + .rt-btn{margin: 0  !important;}
 }
 @media (max-width:320px){}
