@@ -1,4 +1,5 @@
 import React from 'react'
+import withAuth from '../component/hoc/withAuth.component'
 import Login from '../module/login/Login'
 import Project from '../module/project/Project'
 
@@ -8,4 +9,4 @@ const project = () => {
   )
 }
 
-export default project
+export default withAuth(project)

@@ -1,7 +1,18 @@
 import next from "next";
+import { signOut, useSession } from "next-auth/react";
 import Link from "next/link";
+import Router, { useRouter } from "next/router";
 
 export default function Sidebar(){
+    const {data: session} = useSession()
+    console.log(session, "SIDE BAR")
+    const router = useRouter();
+
+    const handleLogout = async () => {
+        await signOut()
+        router.push("/")    
+    }
+
     return(
         <aside className="rt-sidebarwrapper">
             <div className="rt-sidebar">
@@ -59,12 +70,15 @@ export default function Sidebar(){
                         </ul>
                     </nav>
                 </div>
-                <Link href="/">
+                <button onClick={handleLogout} className="rt-btnlogout rt-btn">
+                    <i className="icon-logout"></i>
+                </button>
+                {/* <Link href="/" onClick={() => {signOut()}}>
                     <a className="rt-btnlogout rt-btn">
                         <i className="icon-logout"></i>
                         <span>Logout</span>
                     </a>
-                </Link>
+                </Link> */}
             </div>
         </aside>
     )

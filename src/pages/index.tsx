@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import withoutAuth from '../component/hoc/withOutAuth.component'
 import Login from '../module/login/Login'
 // import styles from '../styles/Home.module.css'
 
@@ -25,4 +26,4 @@ const Home: NextPage = () => {
   )
 }
 
-export default Home
+export default withoutAuth(Home)
