@@ -107,6 +107,196 @@ const User = () => {
                                         </Dropdown>
                                     </td>
                                 </tr>
+                                <tr>
+                                    <td>john deo</td>
+                                    <td>jd@gmail.com</td>
+                                    <td>4</td>
+                                    <td>2882</td>
+                                    <td>Unblocked</td>
+                                    <td className="rt-actiondropdown">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant=" rt-btndropdown" id="dropdown-basic">
+                                                <img src="../../images/menu.png" alt="menu icon" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item href="#/action-1">Block</Dropdown.Item>
+                                                <Dropdown.Item href="#/action-2">Unblock</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>john deo</td>
+                                    <td>jd@gmail.com</td>
+                                    <td>4</td>
+                                    <td>2882</td>
+                                    <td>Unblocked</td>
+                                    <td className="rt-actiondropdown">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant=" rt-btndropdown" id="dropdown-basic">
+                                                <img src="../../images/menu.png" alt="menu icon" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item href="#/action-1">Block</Dropdown.Item>
+                                                <Dropdown.Item href="#/action-2">Unblock</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>john deo</td>
+                                    <td>jd@gmail.com</td>
+                                    <td>4</td>
+                                    <td>2882</td>
+                                    <td>Unblocked</td>
+                                    <td className="rt-actiondropdown">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant=" rt-btndropdown" id="dropdown-basic">
+                                                <img src="../../images/menu.png" alt="menu icon" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item href="#/action-1">Block</Dropdown.Item>
+                                                <Dropdown.Item href="#/action-2">Unblock</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>john deo</td>
+                                    <td>jd@gmail.com</td>
+                                    <td>4</td>
+                                    <td>2882</td>
+                                    <td>Unblocked</td>
+                                    <td className="rt-actiondropdown">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant=" rt-btndropdown" id="dropdown-basic">
+                                                <img src="../../images/menu.png" alt="menu icon" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item href="#/action-1">Block</Dropdown.Item>
+                                                <Dropdown.Item href="#/action-2">Unblock</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>john deo</td>
+                                    <td>jd@gmail.com</td>
+                                    <td>4</td>
+                                    <td>2882</td>
+                                    <td>Unblocked</td>
+                                    <td className="rt-actiondropdown">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant=" rt-btndropdown" id="dropdown-basic">
+                                                <img src="../../images/menu.png" alt="menu icon" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item href="#/action-1">Block</Dropdown.Item>
+                                                <Dropdown.Item href="#/action-2">Unblock</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>john deo</td>
+                                    <td>jd@gmail.com</td>
+                                    <td>4</td>
+                                    <td>2882</td>
+                                    <td>Unblocked</td>
+                                    <td className="rt-actiondropdown">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant=" rt-btndropdown" id="dropdown-basic">
+                                                <img src="../../images/menu.png" alt="menu icon" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item href="#/action-1">Block</Dropdown.Item>
+                                                <Dropdown.Item href="#/action-2">Unblock</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>john deo</td>
+                                    <td>jd@gmail.com</td>
+                                    <td>4</td>
+                                    <td>2882</td>
+                                    <td>Unblocked</td>
+                                    <td className="rt-actiondropdown">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant=" rt-btndropdown" id="dropdown-basic">
+                                                <img src="../../images/menu.png" alt="menu icon" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item href="#/action-1">Block</Dropdown.Item>
+                                                <Dropdown.Item href="#/action-2">Unblock</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>john deo</td>
+                                    <td>jd@gmail.com</td>
+                                    <td>4</td>
+                                    <td>2882</td>
+                                    <td>Unblocked</td>
+                                    <td className="rt-actiondropdown">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant=" rt-btndropdown" id="dropdown-basic">
+                                                <img src="../../images/menu.png" alt="menu icon" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item href="#/action-1">Block</Dropdown.Item>
+                                                <Dropdown.Item href="#/action-2">Unblock</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>john deo</td>
+                                    <td>jd@gmail.com</td>
+                                    <td>4</td>
+                                    <td>2882</td>
+                                    <td>Unblocked</td>
+                                    <td className="rt-actiondropdown">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant=" rt-btndropdown" id="dropdown-basic">
+                                                <img src="../../images/menu.png" alt="menu icon" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item href="#/action-1">Block</Dropdown.Item>
+                                                <Dropdown.Item href="#/action-2">Unblock</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>john deo</td>
+                                    <td>jd@gmail.com</td>
+                                    <td>4</td>
+                                    <td>2882</td>
+                                    <td>Unblocked</td>
+                                    <td className="rt-actiondropdown">
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant=" rt-btndropdown" id="dropdown-basic">
+                                                <img src="../../images/menu.png" alt="menu icon" />
+                                            </Dropdown.Toggle>
+
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item href="#/action-1">Block</Dropdown.Item>
+                                                <Dropdown.Item href="#/action-2">Unblock</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
+                                    </td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
