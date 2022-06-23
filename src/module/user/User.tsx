@@ -79,64 +79,24 @@ const User = () => {
                         <table className="rt-themetable">
                             <thead>
                                 <tr>
-                                    <th>Project</th>
-                                    <th>Socials</th>
-                                    <th>Type </th>
-                                    <th>I.A. Count</th>
+                                    <th>Name </th>
+                                    <th>Email</th>
                                     <th>Following</th>
                                     <th>Followers</th>
-                                    <th>Tweets</th>
-                                    <th>24h Followers Change  </th>
+                                    <th>Status</th>
+                                    <th>Action</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>
-                                        <div className="rt-userimage">
-                                            <img src="../../images/1.png" />
-                                            <span>Astersnft</span>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <ul className="rt-socialicon">
-                                            <li>
-                                                <Link href="">
-                                                    <a>
-                                                        <img src="../../images/twitter.svg" alt="social icon" />
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="">
-                                                    <a>
-                                                        <img src="../../images/instagram.svg" alt="social icon" />
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="">
-                                                    <a>
-                                                        <img src="../../images/medium.svg" alt="social icon" />
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="">
-                                                    <a>
-                                                        <img src="../../images/discord.svg" alt="social icon" />
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                        </ul>
-                                    </td>
-                                    <td>PFP</td>
-                                    <td>42</td>
+                                    <td>john deo</td>
+                                    <td>jd@gmail.com</td>
                                     <td>4</td>
                                     <td>2882</td>
-                                    <td>4</td>
-                                    <td className="rt-followerchange">
+                                    <td>Unblocked</td>
+                                    <td className="rt-actiondropdown">
                                         <Dropdown>
-                                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                            <Dropdown.Toggle variant=" rt-btndropdown" id="dropdown-basic">
                                                 <img src="../../images/menu.png" alt="menu icon" />
                                             </Dropdown.Toggle>
 
