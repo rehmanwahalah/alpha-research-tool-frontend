@@ -1,10 +1,27 @@
+import axios from "axios";
 import next from "next";
 import { signIn, signOut, useSession } from "next-auth/react";
 import Link from "next/link";
+import { useRouter } from "next/router";
+import { useDispatch } from "react-redux";
 import TwitterLogin from "react-twitter-login";
+import { baseURL } from "../../constants/env";
+import { authService } from "../../services/auth.service";
+import { loginUser } from "../../store/auth/async.func";
 
 export default function Login() {
-    const {data: session} = useSession()
+  const dispatch: any = useDispatch();
+  const router = useRouter();
+
+  // const {data: session} = useSession()
+
+  // if(session?.user?.email) {
+  //   dispatch(loginUser(session?.user,router))
+  // }
+
+  const socialLogin = async () => {
+    window.location.href = 'http://localhost:3017/auth/twitter'
+  };
 
   return (
     <div className="rt-loginwrapper">
@@ -32,9 +49,26 @@ export default function Login() {
               <a className="rt-btn rt-btn-lg rt-btnlogin">Login</a>
             </Link> */}
             {/* <span className="rt-loginwith">or</span> */}
-            {
-                session ? <button className="rt-loginwithtwitter" onClick={() => {signOut()}}>logout</button> : <button className="rt-loginwithtwitter" onClick={() => {signIn()}}>Login With Twitter</button>
-            }
+            {false ? (
+              <button
+                className="rt-loginwithtwitter"
+                onClick={() => {
+                  signOut();
+                }}
+              >
+                logout
+              </button>
+            ) : (
+              <button
+                className="rt-loginwithtwitter"
+                type="button"
+                onClick={() => {
+                  socialLogin();
+                }}
+              >
+                Login With Twitter
+              </button>
+            )}
             {/* <TwitterLogin
               authCallback={authHandler}
               consumerKey={"VTRKajJwV1h6bUlHTmlMOFN1SUk6MTpjaQ"}

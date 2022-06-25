@@ -2,9 +2,13 @@ import next from "next";
 // import img from "next/img";
 import Link from "next/link";
 import { Dropdown } from "react-bootstrap";
+import { useSelector } from "react-redux";
+import { selectUser } from "../../store/auth/selector";
 // import Logo from "../../images/logo.svg"
 
 export default function Header() {
+    const user = useSelector(selectUser);
+    console.log(user, "USER **")
     return (
         <header className="rt-header">
             <button className="rt-btnmenu"><i className="icon-menu"></i></button>
@@ -39,7 +43,7 @@ export default function Header() {
                         <li>
                             <Dropdown>
                                 <Dropdown.Toggle variant=" rt-btndropdown" id="dropdown-basic">
-                                    <img src="../../images/user.png" alt="user avtar" />
+                                    <img  src={user?.avatar ? user?.avatar : "../../images/user.png"} alt="user avtar" />
                                 </Dropdown.Toggle>
 
                                 <Dropdown.Menu>

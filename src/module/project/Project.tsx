@@ -8,7 +8,6 @@ import Button from 'react-bootstrap/Button';
 import Modal, { ModalProps } from 'react-bootstrap/Modal';
 import React from "react";
 import { Omit, BsPrefixProps } from "react-bootstrap/esm/helpers";
-import { useSession } from "next-auth/react";
 
 export function MyVerticallyCenteredModal(props: JSX.IntrinsicAttributes & Omit<Pick<React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>, "key" | keyof React.HTMLAttributes<HTMLDivElement>> & { ref?: ((instance: HTMLDivElement | null) => void) | React.RefObject<HTMLDivElement> | null | undefined; }, BsPrefixProps<"div"> & ModalProps> & BsPrefixProps<"div"> & ModalProps & { children?: React.ReactNode; }) {
     return (
@@ -41,8 +40,7 @@ export function MyVerticallyCenteredModal(props: JSX.IntrinsicAttributes & Omit<
 
 const Project = () => {
     const [modalShow, setModalShow] = React.useState(false);
-    const { data: user } = useSession();
-    console.log(user, 'USER')
+
     return (
         <Fragment>
             <Header />

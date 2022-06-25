@@ -1,16 +1,14 @@
-// import { PaperAirplane } from "heroicons-react";
-// import Signin from "../pages/signin";
-// import { selectAccessToken, selectUser } from "../store/auth/selector";
 import { useRouter } from "next/router";
-import { useSession } from "next-auth/react";
+import { useSelector } from "react-redux";
+import { selectAccessToken } from "../../store/auth/selector";
 
 const withoutAuth = (Component: any) => {
 
   const Auth = (props: any) => {
     const router = useRouter();
-    const {data: user} = useSession()
-    // console.log("came to without ayth",user);
-    if (user) {
+    const accessToken = useSelector(selectAccessToken);
+
+    if (accessToken) {
       router.push("/project");
     } else {
       return <Component {...props} />

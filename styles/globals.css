@@ -83,6 +83,7 @@ ul { margin: 0; }
 img {
 	height: auto;
 	max-width: 100%;
+	border-radius: 50%;
 }
 strong { color: #414141; }
 iframe {

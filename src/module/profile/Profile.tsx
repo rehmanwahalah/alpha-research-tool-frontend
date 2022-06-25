@@ -1,10 +1,15 @@
 import next from "next";
+import { useSession } from "next-auth/react";
 import Link from "next/link";
 import { Fragment } from "react";
+import { useSelector } from "react-redux";
 import Header from "../../component/header/Header";
 import Sidebar from "../../component/sidebar/Sidebar";
+import { selectUser } from "../../store/auth/selector";
 
 export default function Profile() {
+    const user = useSelector(selectUser);
+
     return (
         <Fragment>
             <Header />
@@ -19,39 +24,39 @@ export default function Profile() {
                                 </div>
                                 <div className="rt-profiledata">
                                     <figure className="rt-profileimg">
-                                        <img src="../../images/user.png" alt="profile image" />
-                                        <figcaption>
+                                        <img src={user?.avatar ?  user?.avatar : "../../images/user.png"} alt="profile image" />
+                                        {/* <figcaption>
                                             <div className="rt-inputfile">
                                                 <label htmlFor="rt-changeprofileimg">
                                                     <i className="icon-bx_edit"></i>
                                                 </label>
                                                 <input type="file" id="rt-changeprofileimg" />
                                             </div>
-                                        </figcaption>
+                                        </figcaption> */}
                                     </figure>
                                     <div className="rt-profilecontentholder">
                                         <ul>
                                             <li>
                                                 <span>Name</span>
-                                                <span>David San Fik</span>
+                                                <span>{user?.name}</span>
                                             </li>
                                             <li>
                                                 <span>Username</span>
-                                                <span>davidminer</span>
+                                                <span>{user?.username}</span>
                                             </li>
                                             <li>
                                                 <span>Email</span>
-                                                <span>David012@gmail.com</span>
+                                                <span>{user?.email}</span>
                                             </li>
                                         </ul>
-                                        <div className="rt-btnholder">
+                                        {/* <div className="rt-btnholder">
                                             <Link href="/editprofile">
                                                 <a className="rt-btn rt-btn-lg">Edit Profile</a>
                                             </Link>
                                             <Link href="javascript: void(0);">
                                                 <a className="rt-btn rt-btn-lg rt-btnclear">Change Password</a>
                                             </Link>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </div>
                             </div>
