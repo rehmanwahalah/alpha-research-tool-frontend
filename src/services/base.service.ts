@@ -1,6 +1,8 @@
 import axios, { CancelTokenStatic, CancelTokenSource } from "axios";
 import { Console } from "console";
-import { baseURL } from "../constants/env";
+// import { baseURL } from "../constants/env";
+// const baseURL = "http://localhost:3017/api/v1"
+const baseURL = "https://alpharesearchtool.herokuapp.com/api/v1"
 
 export class HttpService {
     CancelToken: CancelTokenStatic;
