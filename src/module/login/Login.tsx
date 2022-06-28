@@ -22,7 +22,7 @@ export default function Login() {
 
   const socialLogin = async () => {
     // window.location.href = env.NEXT_PUBLIC_API_ENDPOINT || 'http://localhost:3017/api/v1/auth/twitter'
-    window.location.href = env.NEXT_PUBLIC_API_ENDPOINT || 'https://alpharesearchtool.herokuapp.com/api/v1'
+    window.location.href = `${env.NEXT_PUBLIC_API_ENDPOINT}/auth/twitter` || 'https://alpharesearchtool.herokuapp.com/api/v1/auth/twitter'
   };
 
   return (
