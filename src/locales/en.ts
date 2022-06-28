@@ -5,4 +5,5 @@ export const en = {
   blocked: 'You account is blocked by admin.',
   loggedIn: 'Logged in successfully',
   accountCreated: 'Account created successfully',
+  followToLogin: 'Follow us to login into the application.',
 };

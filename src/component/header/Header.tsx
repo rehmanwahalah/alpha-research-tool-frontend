@@ -2,13 +2,19 @@ import next from "next";
 // import img from "next/img";
 import Link from "next/link";
 import { Dropdown } from "react-bootstrap";
+import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
+import { logout } from "../../store/auth/async.func";
 import { selectUser } from "../../store/auth/selector";
 // import Logo from "../../images/logo.svg"
 
 export default function Header() {
+    const dispatch = useDispatch()
     const user = useSelector(selectUser);
-    console.log(user, "USER **")
+
+    const handleLogout = async () => {
+        dispatch(logout())
+      };
     return (
         <header className="rt-header">
             <button className="rt-btnmenu"><i className="icon-menu"></i></button>
@@ -56,7 +62,7 @@ export default function Header() {
                                         <i className="icon-wallet"></i>
                                         <span>Wallet</span>
                                     </Dropdown.Item>
-                                    <Dropdown.Item href="/">
+                                    <Dropdown.Item onClick={handleLogout} href="/">
                                         <i className="icon-logout"></i>
                                         <span>Logout</span>
                                     </Dropdown.Item>

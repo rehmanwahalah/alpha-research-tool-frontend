@@ -5,10 +5,12 @@ import { baseURL } from "../constants/env";
 export class HttpService {
     CancelToken: CancelTokenStatic;
     source: CancelTokenSource;
+
     constructor() {
         this.CancelToken = axios.CancelToken;
         this.source = this.CancelToken.source();
     }
+
     /**
      * Set Token On Header
      * @param token

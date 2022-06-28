@@ -3,6 +3,7 @@ import next from "next";
 import { signIn, signOut, useSession } from "next-auth/react";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { env } from "process";
 import { useDispatch } from "react-redux";
 import TwitterLogin from "react-twitter-login";
 import { baseURL } from "../../constants/env";
@@ -20,7 +21,8 @@ export default function Login() {
   // }
 
   const socialLogin = async () => {
-    window.location.href = 'http://localhost:3017/auth/twitter'
+    // window.location.href = env.NEXT_PUBLIC_API_ENDPOINT || 'http://localhost:3017/api/v1/auth/twitter'
+    window.location.href = env.NEXT_PUBLIC_API_ENDPOINT || 'https://alpharesearchtool.herokuapp.com/api/v1'
   };
 
   return (

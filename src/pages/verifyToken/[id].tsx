@@ -1,6 +1,8 @@
-import { useRouter } from 'next/router';
+import Router, { useRouter } from 'next/router';
 import React, { useEffect } from 'react'
 import { useDispatch } from 'react-redux';
+import { toast } from 'react-toastify';
+import { en } from '../../locales/en';
 import { authService } from '../../services/auth.service';
 import { HttpService } from '../../services/base.service';
 import { userService } from '../../services/user.service';
@@ -23,7 +25,11 @@ const verifyJWTToken = () => {
 
     useEffect(()=>{
         if(query.id) {
-            console.log(query.id, "query.id")
+            if(query.id === "NOT_EXIST"){
+                toast.error(en.followToLogin)
+                Router.push("/")
+                return
+            }
             HttpService.setToken(query.id)
             verifyToken()
         }

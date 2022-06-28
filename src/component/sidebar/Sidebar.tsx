@@ -1,13 +1,15 @@
 import Link from "next/link";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { logout } from "../../store/auth/async.func";
+import { selectUser } from "../../store/auth/selector";
 
 export default function Sidebar() {
-
+  const user = useSelector(selectUser);
+  console.log(user, "USERRRR")
   const dispatch:any = useDispatch()
 
   const handleLogout = async () => {
-    dispatch(logout( ))
+    dispatch(logout())
   };
 
   return (
@@ -16,7 +18,7 @@ export default function Sidebar() {
         <div className="rt-navigation">
           <nav className="rt-nav">
             <ul>
-              <li>
+              {/* <li>
                 <Link href="/project">
                   <a>
                     <i className="icon-Vector"></i>
@@ -31,7 +33,7 @@ export default function Sidebar() {
                     <span>Rankings</span>
                   </a>
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link href="/project">
                   <a>
@@ -40,15 +42,18 @@ export default function Sidebar() {
                   </a>
                 </Link>
               </li>
+              {
+                user?.roles.includes("admin") && 
               <li>
-                <Link href="/review">
+                <Link href="/user">
                   <a>
                     <i className="icon-Group-28485"></i>
-                    <span>Reviews</span>
+                    <span>Users</span>
                   </a>
                 </Link>
               </li>
-              <li>
+              }
+              {/* <li>
                 <Link href="/project">
                   <a>
                     <i className="icon-Group-28486"></i>
@@ -63,7 +68,7 @@ export default function Sidebar() {
                     <span>Blogs</span>
                   </a>
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </nav>
         </div>
