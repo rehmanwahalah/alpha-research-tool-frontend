@@ -14,7 +14,7 @@ export function MyVerticallyCenteredModal(props: JSX.IntrinsicAttributes & Omit<
     return (
         <Modal
             {...props}
-            size="md"
+            size='md'
             aria-labelledby="contained-modal-title-vcenter"
             centered
         >
