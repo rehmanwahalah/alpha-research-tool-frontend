@@ -1,17 +1,23 @@
 import next from "next";
 // import img from "next/img";
 import Link from "next/link";
+import { useEffect } from "react";
 import { Dropdown } from "react-bootstrap";
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
+import { HttpService } from "../../services/base.service";
 import { logout } from "../../store/auth/async.func";
-import { selectUser } from "../../store/auth/selector";
+import { selectAccessToken, selectUser } from "../../store/auth/selector";
 // import Logo from "../../images/logo.svg"
 
 export default function Header() {
     const dispatch = useDispatch()
     const user = useSelector(selectUser);
+    const token = useSelector(selectAccessToken);
 
+    useEffect(()=>{
+        if(token) HttpService.setToken(token)
+    },[token])
     const handleLogout = async () => {
         dispatch(logout())
       };

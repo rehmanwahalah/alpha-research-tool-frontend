@@ -37,6 +37,7 @@ export const verifyUserByToken: any = createAsyncThunk(
     try {
       const user = await userService.verifyUser()
       HttpService.setToken(user.data.data.access_token);
+      console.log(user, 'USER RESP')
       toast.success(en.loggedIn)
       Router.push("/project");
       return user.data.data;

@@ -5,7 +5,6 @@ import { selectUser } from "../../store/auth/selector";
 
 export default function Sidebar() {
   const user = useSelector(selectUser);
-  console.log(user, "USERRRR")
   const dispatch:any = useDispatch()
 
   const handleLogout = async () => {

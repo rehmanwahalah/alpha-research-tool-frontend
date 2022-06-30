@@ -6,7 +6,7 @@ import { useRouter } from "next/router";
 import { env } from "process";
 import { useDispatch } from "react-redux";
 import TwitterLogin from "react-twitter-login";
-import { baseURL } from "../../constants/env";
+import { backendUrl, baseURL } from "../../constants/env";
 import { authService } from "../../services/auth.service";
 import { loginUser } from "../../store/auth/async.func";
 
@@ -21,9 +21,9 @@ export default function Login() {
   // }
 
   const socialLogin = async () => {
-    // window.location.href = env.NEXT_PUBLIC_API_ENDPOINT || 'http://localhost:3017/api/v1/auth/twitter'
-    // window.location.href = `${env.NEXT_PUBLIC_API_ENDPOINT}/auth/twitter` || 'https://alpharesearchtool.herokuapp.com/api/v1/auth/twitter'
-    window.location.href = 'https://alpharesearchtool.herokuapp.com/api/v1/auth/twitter'
+    // window.location.href = 'http://localhost:3017/api/v1/auth/twitter'
+    // window.location.href = 'https://alpharesearchtool.herokuapp.com/api/v1/auth/twitter'
+    window.location.href = backendUrl
   };
 
   return (
