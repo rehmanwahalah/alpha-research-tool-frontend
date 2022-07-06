@@ -26,10 +26,10 @@ export function MyVerticallyCenteredModal(
         "key" | keyof React.HTMLAttributes<HTMLDivElement>
       > & {
         ref?:
-          | ((instance: HTMLDivElement | null) => void)
-          | React.RefObject<HTMLDivElement>
-          | null
-          | undefined;
+        | ((instance: HTMLDivElement | null) => void)
+        | React.RefObject<HTMLDivElement>
+        | null
+        | undefined;
       },
       BsPrefixProps<"div"> & ModalProps
     > &
@@ -39,7 +39,7 @@ export function MyVerticallyCenteredModal(
   return (
     <Modal
       {...props}
-      size="sm"
+      size="lg"
       aria-labelledby="contained-modal-title-vcenter"
       centered
     >
@@ -122,7 +122,7 @@ const User = () => {
       console.log(error);
     }
   };
-  
+
   function isLetter(str: any) {
     return (
       (str.length === 1 && str.match(/[a-z0-9]/i)) ||
@@ -154,6 +154,10 @@ const User = () => {
       <div className="rt-projects">
         <Sidebar />
         <div className="rt-projecttableholder">
+          <div className="rt-pagetitle">
+            <h2>Users</h2>
+            <h3>Total User = 566</h3>
+          </div>
           <div className="rt-pagetop">
             <div className="rt-searchform">
               <form className="rt-formtheme">
@@ -173,6 +177,29 @@ const User = () => {
                   </div>
                 </fieldset>
               </form>
+            </div>
+            <div className="rt-userfilterdropdown">
+              <Dropdown>
+                <Dropdown.Toggle
+                  variant=" rt-btndropdown"
+                  id="dropdown-basic"
+                >
+                  <span>Select</span>
+                  <i className="icon-arrowdown"></i>
+                </Dropdown.Toggle>
+
+                <Dropdown.Menu>
+                  <Dropdown.Item href="#/action-1">
+                    All
+                  </Dropdown.Item>
+                  <Dropdown.Item href="#/action-1">
+                    Block
+                  </Dropdown.Item>
+                  <Dropdown.Item href="#/action-1">
+                    Unblock
+                  </Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
             </div>
           </div>
           <div className="rt-projecttable">
@@ -199,7 +226,7 @@ const User = () => {
                         <td>{user.email}</td>
                         <td>{user.following > 0 ? user.following : 0}</td>
                         <td>{user.followers > 0 ? user.followers : 0}</td>
-                        <td>{user.isActive ? "Active" : "Blocked"}</td>
+                        <td className="rt-userstatus"> <span> {user.isActive ? "Active" : "Blocked"}</span></td>
                         <td className="rt-actiondropdown">
                           <Dropdown>
                             <Dropdown.Toggle
@@ -213,7 +240,7 @@ const User = () => {
                             </Dropdown.Toggle>
 
                             <Dropdown.Menu>
-                              <Dropdown.Item onClick={()=>{blockUnblockUser(user.isActive, user._id)}} href="#/action-1">
+                              <Dropdown.Item onClick={() => { blockUnblockUser(user.isActive, user._id) }} href="#/action-1">
                                 {user.isActive ? "Block" : "un-block"}
                               </Dropdown.Item>
                             </Dropdown.Menu>

@@ -13,7 +13,7 @@ export function MyVerticallyCenteredModal(props: JSX.IntrinsicAttributes & Omit<
     return (
         <Modal
             {...props}
-            size="sm"
+            size="lg"
             aria-labelledby="contained-modal-title-vcenter"
             centered
         >
@@ -48,6 +48,10 @@ const Project = () => {
 
                 <Sidebar />
                 <div className="rt-projecttableholder">
+                    <div className="rt-pagetitle">
+                        <h2>Project</h2>
+                        <h3>Total Projects = 566</h3>
+                    </div>
                     <div className="rt-pagetop">
                         <div className="rt-searchform">
                             <form className="rt-formtheme">
@@ -139,7 +143,7 @@ const Project = () => {
                                         <span>21.47%</span>
                                     </td>
                                 </tr>
-                                <tr>
+                                {/* <tr>
                                     <td>
                                         <div className="rt-userimage">
                                             <img src="../../images/1.png" />
@@ -579,7 +583,7 @@ const Project = () => {
                                         <span>+652</span>
                                         <span>21.47%</span>
                                     </td>
-                                </tr>
+                                </tr> */}
                             </tbody>
                         </table>
                     </div>
