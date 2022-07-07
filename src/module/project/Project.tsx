@@ -8,6 +8,9 @@ import Button from 'react-bootstrap/Button';
 import Modal, { ModalProps } from 'react-bootstrap/Modal';
 import React from "react";
 import { Omit, BsPrefixProps } from "react-bootstrap/esm/helpers";
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+import { Circles } from 'react-loader-spinner';
+
 
 export function MyVerticallyCenteredModal(props: JSX.IntrinsicAttributes & Omit<Pick<React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>, "key" | keyof React.HTMLAttributes<HTMLDivElement>> & { ref?: ((instance: HTMLDivElement | null) => void) | React.RefObject<HTMLDivElement> | null | undefined; }, BsPrefixProps<"div"> & ModalProps> & BsPrefixProps<"div"> & ModalProps & { children?: React.ReactNode; }) {
     return (
@@ -43,6 +46,14 @@ const Project = () => {
 
     return (
         <Fragment>
+            {/* <div className="rt-loader">
+                <Circles
+                    height="100"
+                    width="100"
+                    color='#0D96FD'
+                    ariaLabel='loading'
+                />
+            </div> */}
             <Header />
             <div className="rt-projects">
 
@@ -94,7 +105,7 @@ const Project = () => {
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
+                                {/* <tr>
                                     <td>
                                         <div className="rt-userimage">
                                             <img src="../../images/1.png" />
@@ -142,7 +153,7 @@ const Project = () => {
                                         <span>+652</span>
                                         <span>21.47%</span>
                                     </td>
-                                </tr>
+                                </tr> */}
                                 {/* <tr>
                                     <td>
                                         <div className="rt-userimage">
@@ -586,6 +597,9 @@ const Project = () => {
                                 </tr> */}
                             </tbody>
                         </table>
+                        <figure className="rt-nodataimg">
+                            <img src="../../images/nodata.webp" alt="no data" />
+                        </figure>
                     </div>
                     <div className="rt-pagination">
                         <ul>

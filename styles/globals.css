@@ -1143,3 +1143,29 @@ table > tfoot > tr > td {
 	color: #fff;
 	text-align: left;
 }
+/* .rt-loader{
+	display: flex;
+    height: 100vh;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: rgba(0,0,0,0.9);
+    z-index: 11;
+} */
+.rt-loader > div {
+	display: flex;
+    height: 100vh;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: rgba(0,0,0,0.7);
+    z-index: 11;
+}
+.rt-nodataimg{
+	width: 100%;
+	margin: 0 auto;
+	max-width: 256PX;
+	display: block;
+}
