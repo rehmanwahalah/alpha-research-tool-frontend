@@ -34,7 +34,7 @@ export default function Header() {
             <div className="rt-addnavigation">
                 <nav className="rt-nav">
                     <ul>
-                        <li>
+                        {/* <li>
                             <Link href="">
                                 <img src="../../images/q.svg" alt="question image" />
                             </Link>
@@ -51,7 +51,7 @@ export default function Header() {
                                     <Dropdown.Item href="#/action-3"></Dropdown.Item>
                                 </Dropdown.Menu>
                             </Dropdown>
-                        </li>
+                        </li> */}
                         <li>
                             <Dropdown>
                                 <Dropdown.Toggle variant=" rt-btndropdown" id="dropdown-basic">

@@ -2,6 +2,7 @@ import Router, { useRouter } from 'next/router';
 import React, { useEffect } from 'react'
 import { useDispatch } from 'react-redux';
 import { toast } from 'react-toastify';
+import { BLOCKED, NOT_EXIST } from '../../constants/auth.constant';
 import { en } from '../../locales/en';
 import { authService } from '../../services/auth.service';
 import { HttpService } from '../../services/base.service';
@@ -25,8 +26,12 @@ const verifyJWTToken = () => {
 
     useEffect(()=>{
         if(query.id) {
-            if(query.id === "NOT_EXIST"){
+            if(query.id === NOT_EXIST){
                 toast.error(en.followToLogin)
+                Router.push("/")
+                return
+            } else if(query.id === BLOCKED) {
+                toast.error(en.blocked)
                 Router.push("/")
                 return
             }

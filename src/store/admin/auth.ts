@@ -14,7 +14,7 @@ const slice = createSlice({
   reducers: {},
   extraReducers: {
     [getAllUsers.fulfilled.toString()]: (state, { type, payload }) => {
-      console.log("=====>", payload.walletAddress);
+      // console.log("=====>", payload.walletAddress);
       debugger
       state.users = payload.user;
       state.usersLoading = false

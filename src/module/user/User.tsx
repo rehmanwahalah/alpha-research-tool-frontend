@@ -181,6 +181,7 @@ const User = () => {
                 <tr>
                   <th>Join Date </th>
                   <th>Name </th>
+                  <th>Username </th>
                   <th>Email</th>
                   <th>Following</th>
                   <th>Followers</th>
@@ -196,6 +197,7 @@ const User = () => {
                       <tr>
                         <td>{moment(user.createdAt).format("L")}</td>
                         <td>{user.name}</td>
+                        <td>{user.username}</td>
                         <td>{user.email}</td>
                         <td>{user.following > 0 ? user.following : 0}</td>
                         <td>{user.followers > 0 ? user.followers : 0}</td>
