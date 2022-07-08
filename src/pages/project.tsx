@@ -9,4 +9,5 @@ const project = () => {
   )
 }
 
-export default withAuth(project)
+// export default withAuth(project)
+export default project

@@ -52,6 +52,12 @@ export default function Login() {
               <a className="rt-btn rt-btn-lg rt-btnlogin">Login</a>
             </Link> */}
             {/* <span className="rt-loginwith">or</span> */}
+            <div className="rt-checkbox rt-checkboxterm">
+              <input type="checkbox" id="checkbox" name="checkbox" />
+              <label htmlFor="checkbox">
+                <p>I Agree <Link href=""><a>Terms</a></Link> & <Link href="">Coditions</Link></p>
+              </label>
+            </div>
             {false ? (
               <button
                 className="rt-loginwithtwitter"
@@ -69,7 +75,8 @@ export default function Login() {
                   socialLogin();
                 }}
               >
-                Login With Twitter
+                <i className="icon-twitter"></i>
+                <span>Login With Twitter</span>
               </button>
             )}
             {/* <TwitterLogin

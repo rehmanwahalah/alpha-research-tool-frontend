@@ -8,12 +8,15 @@ import Button from 'react-bootstrap/Button';
 import Modal, { ModalProps } from 'react-bootstrap/Modal';
 import React from "react";
 import { Omit, BsPrefixProps } from "react-bootstrap/esm/helpers";
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+import { Circles } from 'react-loader-spinner';
+
 
 export function MyVerticallyCenteredModal(props: JSX.IntrinsicAttributes & Omit<Pick<React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>, "key" | keyof React.HTMLAttributes<HTMLDivElement>> & { ref?: ((instance: HTMLDivElement | null) => void) | React.RefObject<HTMLDivElement> | null | undefined; }, BsPrefixProps<"div"> & ModalProps> & BsPrefixProps<"div"> & ModalProps & { children?: React.ReactNode; }) {
     return (
         <Modal
             {...props}
-            size="sm"
+            size="lg"
             aria-labelledby="contained-modal-title-vcenter"
             centered
         >
@@ -43,11 +46,23 @@ const Project = () => {
 
     return (
         <Fragment>
+            {/* <div className="rt-loader">
+                <Circles
+                    height="100"
+                    width="100"
+                    color='#0D96FD'
+                    ariaLabel='loading'
+                />
+            </div> */}
             <Header />
             <div className="rt-projects">
 
                 <Sidebar />
                 <div className="rt-projecttableholder">
+                    <div className="rt-pagetitle">
+                        <h2>Project</h2>
+                        <h3>Total Projects = 566</h3>
+                    </div>
                     <div className="rt-pagetop">
                         <div className="rt-searchform">
                             <form className="rt-formtheme">
@@ -90,7 +105,56 @@ const Project = () => {
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
+                                {/* <tr>
+                                    <td>
+                                        <div className="rt-userimage">
+                                            <img src="../../images/1.png" />
+                                            <span>Astersnft</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <ul className="rt-socialicon">
+                                            <li>
+                                                <Link href="">
+                                                    <a>
+                                                        <img src="../../images/twitter.svg" alt="social icon" />
+                                                    </a>
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link href="">
+                                                    <a>
+                                                        <img src="../../images/instagram.svg" alt="social icon" />
+                                                    </a>
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link href="">
+                                                    <a>
+                                                        <img src="../../images/medium.svg" alt="social icon" />
+                                                    </a>
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link href="">
+                                                    <a>
+                                                        <img src="../../images/discord.svg" alt="social icon" />
+                                                    </a>
+                                                </Link>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                    <td>PFP</td>
+                                    <td>42</td>
+                                    <td>4</td>
+                                    <td>2882</td>
+                                    <td>4</td>
+                                    <td className="rt-followerchange">
+                                        <span>+652</span>
+                                        <span>21.47%</span>
+                                    </td>
+                                </tr> */}
+                                {/* <tr>
                                     <td>
                                         <div className="rt-userimage">
                                             <img src="../../images/1.png" />
@@ -530,58 +594,12 @@ const Project = () => {
                                         <span>+652</span>
                                         <span>21.47%</span>
                                     </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div className="rt-userimage">
-                                            <img src="../../images/1.png" />
-                                            <span>Astersnft</span>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <ul className="rt-socialicon">
-                                            <li>
-                                                <Link href="">
-                                                    <a>
-                                                        <img src="../../images/twitter.svg" alt="social icon" />
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="">
-                                                    <a>
-                                                        <img src="../../images/instagram.svg" alt="social icon" />
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="">
-                                                    <a>
-                                                        <img src="../../images/medium.svg" alt="social icon" />
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="">
-                                                    <a>
-                                                        <img src="../../images/discord.svg" alt="social icon" />
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                        </ul>
-                                    </td>
-                                    <td>PFP</td>
-                                    <td>42</td>
-                                    <td>4</td>
-                                    <td>2882</td>
-                                    <td>4</td>
-                                    <td className="rt-followerchange">
-                                        <span>+652</span>
-                                        <span>21.47%</span>
-                                    </td>
-                                </tr>
+                                </tr> */}
                             </tbody>
                         </table>
+                        <figure className="rt-nodataimg">
+                            <img src="../../images/nodata.webp" alt="no data" />
+                        </figure>
                     </div>
                     <div className="rt-pagination">
                         <ul>
