@@ -105,104 +105,6 @@ const Project = () => {
                                 </tr>
                             </thead>
                             <tbody>
-                                {/* <tr>
-                                    <td>
-                                        <div className="rt-userimage">
-                                            <img src="../../images/1.png" />
-                                            <span>Astersnft</span>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <ul className="rt-socialicon">
-                                            <li>
-                                                <Link href="">
-                                                    <a>
-                                                        <img src="../../images/twitter.svg" alt="social icon" />
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="">
-                                                    <a>
-                                                        <img src="../../images/instagram.svg" alt="social icon" />
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="">
-                                                    <a>
-                                                        <img src="../../images/medium.svg" alt="social icon" />
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="">
-                                                    <a>
-                                                        <img src="../../images/discord.svg" alt="social icon" />
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                        </ul>
-                                    </td>
-                                    <td>PFP</td>
-                                    <td>42</td>
-                                    <td>4</td>
-                                    <td>2882</td>
-                                    <td>4</td>
-                                    <td className="rt-followerchange">
-                                        <span>+652</span>
-                                        <span>21.47%</span>
-                                    </td>
-                                </tr> */}
-                                {/* <tr>
-                                    <td>
-                                        <div className="rt-userimage">
-                                            <img src="../../images/1.png" />
-                                            <span>Astersnft</span>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <ul className="rt-socialicon">
-                                            <li>
-                                                <Link href="">
-                                                    <a>
-                                                        <img src="../../images/twitter.svg" alt="social icon" />
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="">
-                                                    <a>
-                                                        <img src="../../images/instagram.svg" alt="social icon" />
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="">
-                                                    <a>
-                                                        <img src="../../images/medium.svg" alt="social icon" />
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="">
-                                                    <a>
-                                                        <img src="../../images/discord.svg" alt="social icon" />
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                        </ul>
-                                    </td>
-                                    <td>PFP</td>
-                                    <td>42</td>
-                                    <td>4</td>
-                                    <td>2882</td>
-                                    <td>4</td>
-                                    <td className="rt-followerchange">
-                                        <span>+652</span>
-                                        <span>21.47%</span>
-                                    </td>
-                                </tr>
                                 <tr>
                                     <td>
                                         <div className="rt-userimage">
@@ -594,12 +496,110 @@ const Project = () => {
                                         <span>+652</span>
                                         <span>21.47%</span>
                                     </td>
-                                </tr> */}
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div className="rt-userimage">
+                                            <img src="../../images/1.png" />
+                                            <span>Astersnft</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <ul className="rt-socialicon">
+                                            <li>
+                                                <Link href="">
+                                                    <a>
+                                                        <img src="../../images/twitter.svg" alt="social icon" />
+                                                    </a>
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link href="">
+                                                    <a>
+                                                        <img src="../../images/instagram.svg" alt="social icon" />
+                                                    </a>
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link href="">
+                                                    <a>
+                                                        <img src="../../images/medium.svg" alt="social icon" />
+                                                    </a>
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link href="">
+                                                    <a>
+                                                        <img src="../../images/discord.svg" alt="social icon" />
+                                                    </a>
+                                                </Link>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                    <td>PFP</td>
+                                    <td>42</td>
+                                    <td>4</td>
+                                    <td>2882</td>
+                                    <td>4</td>
+                                    <td className="rt-followerchange">
+                                        <span>+652</span>
+                                        <span>21.47%</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div className="rt-userimage">
+                                            <img src="../../images/1.png" />
+                                            <span>Astersnft</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <ul className="rt-socialicon">
+                                            <li>
+                                                <Link href="">
+                                                    <a>
+                                                        <img src="../../images/twitter.svg" alt="social icon" />
+                                                    </a>
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link href="">
+                                                    <a>
+                                                        <img src="../../images/instagram.svg" alt="social icon" />
+                                                    </a>
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link href="">
+                                                    <a>
+                                                        <img src="../../images/medium.svg" alt="social icon" />
+                                                    </a>
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link href="">
+                                                    <a>
+                                                        <img src="../../images/discord.svg" alt="social icon" />
+                                                    </a>
+                                                </Link>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                    <td>PFP</td>
+                                    <td>42</td>
+                                    <td>4</td>
+                                    <td>2882</td>
+                                    <td>4</td>
+                                    <td className="rt-followerchange">
+                                        <span>+652</span>
+                                        <span>21.47%</span>
+                                    </td>
+                                </tr>
                             </tbody>
                         </table>
-                        <figure className="rt-nodataimg">
+                        {/* <figure className="rt-nodataimg">
                             <img src="../../images/nodata.webp" alt="no data" />
-                        </figure>
+                        </figure> */}
                     </div>
                     <div className="rt-pagination">
                         <ul>

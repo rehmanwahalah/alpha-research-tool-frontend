@@ -68,6 +68,7 @@ const User = () => {
   const [loading, setLoading] = useState<boolean>(false);
   const [users, setUsers] = useState<Array<any>>([]);
   const [searchValue, setSearchValue] = useState("");
+  const [filterValue, setFilterValue] = useState<boolean | undefined>(undefined);
 
   const [state, setState] = useState<any>({
     current_page: 1,
@@ -83,6 +84,7 @@ const User = () => {
         page: page,
         resPerPage: state.per_page,
         search: searchValue,
+        type: filterValue
       });
       setUsers(res?.data?.data?.users);
       setState({
@@ -122,6 +124,12 @@ const User = () => {
       console.log(error);
     }
   };
+  
+  const handleFilter = (e:any) => {
+    if(e === "all") setFilterValue(undefined)
+    if(e === "active") setFilterValue(true)
+    if(e === "block") setFilterValue(false)
+  }
 
   function isLetter(str: any) {
     return (
@@ -146,7 +154,7 @@ const User = () => {
 
   useEffect(() => {
     getUsers();
-  }, []);
+  }, [filterValue]);
 
   return (
     <Fragment>
@@ -155,8 +163,8 @@ const User = () => {
         <Sidebar />
         <div className="rt-projecttableholder">
           <div className="rt-pagetitle">
-            <h2>Users</h2>
-            <h3>Total User = 566</h3>
+            <h2>User Management</h2>
+            <h3>Total User = {users?.length}</h3>
           </div>
           <div className="rt-pagetop">
             <div className="rt-searchform">
@@ -179,24 +187,24 @@ const User = () => {
               </form>
             </div>
             <div className="rt-userfilterdropdown">
-              <Dropdown>
+              <Dropdown onSelect={handleFilter}>
                 <Dropdown.Toggle
                   variant=" rt-btndropdown"
                   id="dropdown-basic"
                 >
-                  <span>Select</span>
+                  <span>{filterValue ? "Active" : filterValue === false ? "block" : "All" }</span>
                   <i className="icon-arrowdown"></i>
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu>
-                  <Dropdown.Item href="#/action-1">
+                  <Dropdown.Item eventKey="all">
                     All
                   </Dropdown.Item>
-                  <Dropdown.Item href="#/action-1">
-                    Block
+                  <Dropdown.Item eventKey="active">
+                    Active
                   </Dropdown.Item>
-                  <Dropdown.Item href="#/action-1">
-                    Unblock
+                  <Dropdown.Item eventKey="block">
+                    Block
                   </Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
