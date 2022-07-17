@@ -31,12 +31,12 @@ export default function Login() {
       <div className="rt-login">
         <strong className="rt-loginlogo">
           <span>
-            <img src="../../images/logo.svg" />
+            <img src="../../images/loginlogo.svg" />
           </span>
         </strong>
         <form className="rt-themeform rt-loginform">
           <fieldset>
-            {/* <legend>Login</legend> */}
+            <legend>be early join us</legend>
             {/* <div className="form-group">
               <label>Email</label>
               <input type="text" placeholder="Enter Your Email " />
@@ -53,9 +53,10 @@ export default function Login() {
             </Link> */}
             {/* <span className="rt-loginwith">or</span> */}
             <div className="rt-checkbox rt-checkboxterm">
-              <input type="checkbox" id="checkbox" name="checkbox" />
-              <label htmlFor="checkbox">
-                <p>I Agree <Link href=""><a>Terms</a></Link> & <Link href="">Coditions</Link></p>
+              {/* <input type="checkbox" id="checkbox" name="checkbox" /> */}
+              <label htmlFor="checkbox" className="text-center">
+                <p>By clicking the button below, you agree to</p>
+                <p>Alpha research Tools <Link href=""><a>Terms of services</a></Link> and <Link href="">Privacy policy</Link>.</p>
               </label>
             </div>
             {false ? (

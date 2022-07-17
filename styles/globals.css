@@ -356,11 +356,6 @@ table > tfoot > tr > td {
 ============================================= */
 .rt-loginwrapper{
 	width: 100%;
-	float: left;
-}
-.rt-login{
-	max-width: 320px;
-	margin: 0 auto;
 	display: flex;
 	height: 100vh;
 	justify-content: center;
@@ -369,10 +364,30 @@ table > tfoot > tr > td {
 	min-height: 768px;
 	overflow: auto;
 }
+.rt-login{
+	max-width: 960px;
+	margin: 0 auto;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+	background: #172334;
+	padding: 120px;
+	border-radius: 12px;
+    flex-direction: column;
+}
 .rt-loginlogo{
-	max-width: 180px;
+	max-width: 300px;
 	margin: 0 auto 40px;
 }
+.rt-loginlogo span,
+.rt-loginlogo span img{display: block;}
+.rt-loginlogo span img{
+	height: auto;
+	width: 100%;
+	border-radius: 0;
+}
+.rt-loginlogo span{border-radius: 0;}
 .rt-loginform legend{
 	font-size: 40px;
 	line-height: 44px;
@@ -413,9 +428,10 @@ table > tfoot > tr > td {
 	margin: 20px 0;
 }
 .rt-loginwithtwitter{
-	width: 100%;
-	float: left;
+	/* width: 100%;
+	float: left; */
 	color: #fff;
+	padding: 0 32px;
 	font-size: 20px;
 	font-weight: 600;
 	line-height: 50px;
@@ -519,10 +535,10 @@ table > tfoot > tr > td {
 .rt-filterholder{
 	width: 100%;
 	float: left;
-	padding: 0 0 30px;
+	/* padding: 0 0 30px; */
 	background: #22364D;
 }
-.rt-filterholder .rt-formtheme .form-group{padding: 20px;}
+.rt-filterholder .rt-formtheme .form-group{padding: 10px 20px;}
 .rt-filterholder .rt-formtheme .form-group label{
 	width: 174px;
 	display: inline-block;
@@ -1084,6 +1100,7 @@ table > tfoot > tr > td {
 .rt-checkboxterm{margin: 0 0 24px;}
 .rt-checkboxterm label{width: calc(100% - 40px);}
 .rt-checkboxterm input{margin: 0 16px 0 0;}
+.rt-checkboxterm label p{font-size: 14px;}
 .rt-pagetitle{
 	width: 100%;
 	float: left;
@@ -1101,11 +1118,13 @@ table > tfoot > tr > td {
 	float: right;
 }
 .rt-userstatus span{
-	/* display: block; */
+	display: inline-block;
+	width: 110px;
 	background: #0D96FD;
 	border-radius: 4px;
 	padding: 8px 16px;
 }
+.rt-userstatus span.rt-bgred{background: #f00;}
 .rt-userfilterdropdown{
 	float: right;
 }
@@ -1168,4 +1187,131 @@ table > tfoot > tr > td {
 	margin: 0 auto;
 	max-width: 256PX;
 	display: block;
+}
+.rt-termsholder p{
+	margin: 0;
+	color: #FFF;
+	font-size: 11pt;
+	font-family: "Calibri";
+}
+.c3 {
+	margin-left: 36pt;
+	padding-top: 0pt;
+	padding-left: 0pt;
+	padding-bottom: 0pt;
+	line-height: 1.1500000000000001;
+	orphans: 2;
+	widows: 2;
+	text-align: justify
+}
+
+.c12 {
+	margin-left: 36pt;
+	padding-top: 0pt;
+	padding-left: 0pt;
+	padding-bottom: 14pt;
+	line-height: 1.1500000000000001;
+	orphans: 2;
+	widows: 2;
+	text-align: justify
+}
+
+.c2 {
+	color: #FFF;
+	font-weight: 400;
+	text-decoration: none;
+	vertical-align: baseline;
+	font-size: 12pt;
+	font-family: "Times New Roman";
+	font-style: normal
+}
+
+.c9 {
+	padding-top: 0pt;
+	padding-bottom: 8pt;
+	line-height: 1.1500000000000001;
+	orphans: 2;
+	widows: 2;
+	text-align: justify;
+	height: 11pt
+}
+
+.c13 {
+	padding-top: 0pt;
+	padding-bottom: 14pt;
+	line-height: 1.1500000000000001;
+	orphans: 2;
+	widows: 2;
+	text-align: justify
+}
+
+.c7 {
+	padding-top: 14pt;
+	padding-bottom: 0pt;
+	line-height: 1.1500000000000001;
+	orphans: 2;
+	widows: 2;
+	text-align: justify
+}
+
+.c1 {
+	padding-top: 14pt;
+	padding-bottom: 14pt;
+	line-height: 1.1500000000000001;
+	orphans: 2;
+	widows: 2;
+	text-align: justify
+}
+
+.c4 {
+	color: #FFF;
+	text-decoration: none;
+	vertical-align: baseline;
+	font-style: normal
+}
+
+.c10 {
+	font-weight: 400;
+	font-size: 11pt;
+	font-family: "Calibri"
+}
+
+.c6 {
+	font-weight: 700;
+	font-size: 24pt;
+	font-family: "Times New Roman"
+}
+
+.c5 {
+	font-size: 12pt;
+	font-family: "Times New Roman";
+	font-weight: 400
+}
+
+.c11 {
+	background-color: #000;
+	padding: 70.8pt 70.8pt 70.8pt 70.8pt
+}
+
+.c0 {
+	font-size: 12pt;
+	font-family: "Times New Roman";
+	font-weight: 700
+}
+
+.c8 {
+	padding: 0;
+	margin: 0
+}
+li.li-bullet-0:before {
+    margin-left: -18pt;
+    white-space: nowrap;
+    display: inline-block;
+    min-width: 18pt;
+}
+.lst-kix_list_1-0>li:before {
+    content: "\0025cf ";
+}
+.lst-kix_list_3-0>li:before {
+    content: "\0025cf ";
 }
