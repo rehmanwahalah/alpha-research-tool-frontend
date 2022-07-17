@@ -225,62 +225,6 @@ const User = () => {
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td>01/02/2222</td>
-                  <td>sajidalias</td>
-                  <td>Sajid</td>
-                  <td>sajid@sajid.com</td>
-                  <td>25k</td>
-                  <td>30k</td>
-                  <td className="rt-userstatus"> <span className="rt-bgred"> Blocked</span></td>
-                  <td className="rt-actiondropdown">
-                    <Dropdown>
-                      <Dropdown.Toggle
-                        variant=" rt-btndropdown"
-                        id="dropdown-basic"
-                      >
-                        <img
-                          src="../../images/menu.png"
-                          alt="menu icon"
-                        />
-                      </Dropdown.Toggle>
-
-                      <Dropdown.Menu>
-                        <Dropdown.Item href="#/action-1">
-                          Unblocked
-                        </Dropdown.Item>
-                      </Dropdown.Menu>
-                    </Dropdown>
-                  </td>
-                </tr>
-                <tr>
-                  <td>01/02/2222</td>
-                  <td>sajidalias</td>
-                  <td>Sajid</td>
-                  <td>sajid@sajid.com</td>
-                  <td>25k</td>
-                  <td>30k</td>
-                  <td className="rt-userstatus"> <span> Active</span></td>
-                  <td className="rt-actiondropdown">
-                    <Dropdown>
-                      <Dropdown.Toggle
-                        variant=" rt-btndropdown"
-                        id="dropdown-basic"
-                      >
-                        <img
-                          src="../../images/menu.png"
-                          alt="menu icon"
-                        />
-                      </Dropdown.Toggle>
-
-                      <Dropdown.Menu>
-                        <Dropdown.Item href="#/action-1">
-                          blocked
-                        </Dropdown.Item>
-                      </Dropdown.Menu>
-                    </Dropdown>
-                  </td>
-                </tr>
                 {users &&
                   users.length > 0 &&
                   users.map((user: any) => (
@@ -292,7 +236,7 @@ const User = () => {
                         <td>{user.email}</td>
                         <td>{user.following > 0 ? user.following : 0}</td>
                         <td>{user.followers > 0 ? user.followers : 0}</td>
-                        <td className="rt-userstatus"> <span> {user.isActive ? "Active" : "Blocked"}</span></td>
+                        <td className="rt-userstatus"> <span className={!user.isActive ? "rt-bgred" : ""}> {user.isActive ? "Active" : "Blocked"}</span></td>
                         <td className="rt-actiondropdown">
                           <Dropdown>
                             <Dropdown.Toggle
