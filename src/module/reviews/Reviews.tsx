@@ -1,111 +1,119 @@
 import next from "next";
-import { Fragment } from "react";
+import { Fragment, useEffect } from "react";
 import Header from "../../component/header/Header";
 import Filter from "../../component/filter/Filter";
 import Sidebar from "../../component/sidebar/Sidebar";
+import { selectCurrentProject } from "../../store/project/selector";
+import { useSelector } from "react-redux";
+import moment from "moment";
+import { selectUser } from "../../store/auth/selector";
 
+export default function Reviews() {
+  const currentProject = useSelector(selectCurrentProject);
+  const user = useSelector(selectUser);
 
+  useEffect(() => {}, [currentProject]);
 
-export default function Reviews(){
-    return(
-        <Fragment>
-            <Header />
-            <Sidebar /> 
-            <div className="rt-reviews rt-projects">
-                {/* <Filter /> */}
-                <div className="rt-review">
-                    {/* <div className="rt-eyeicon">
+  console.log(user, "user=-=-=-=-");
+  return (
+    <Fragment>
+      <Header />
+      <Sidebar />
+      <div className="rt-reviews rt-projects">
+        {/* <Filter /> */}
+        <div className="rt-review">
+          {/* <div className="rt-eyeicon">
                         <span>
                             <img src="../../images/eye.svg"/>
                         </span>
                     </div> */}
-                    <figure className="rt-reviewimg">
-                        <img src="../../images/01.png"/>
-                    </figure>
-                    <div className="rt-reviewhead">
-                        <div className="rt-reviewheading">
-                            <h2>Astersnft</h2>
-                            <div className="rt-socialreview">
-                                <ul>
-                                    <li>
-                                        <span>Twitter created:</span>
-                                        <span>April 2022</span>
-                                    </li>
-                                    <li>
-                                        <span>First Tweet:</span>
-                                        <span>09 Apr 2022</span>
-                                    </li>
-                                </ul>
-                                <ul>
-                                    <li>
-                                        <span>
-                                        <img src="../../images/twitter.svg" alt="social icon"/>
-                                        </span>
-                                        <span>842</span>
-                                    </li>
-                                    <li>
-                                        <span>
-                                        <img src="../../images/instagram.svg" alt="social icon"/>
-                                        </span>
-                                        <span>842</span>
-                                    </li>
-                                    <li>
-                                        <span>
-                                        <img src="../../images/medium.svg" alt="social icon"/>
-                                        </span>
-                                        <span>842</span>
-                                    </li>
-                                    <li>
-                                        <span>
-                                        <img src="../../images/discord.svg" alt="social icon"/>
-                                        </span>
-                                        <span>842</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="rt-reviewbody">
-                            <ul className="rt-reviewfilterdetail">
-                                <li>
-                                    <span>IA CT: </span>
-                                    <span>37</span>
-                                </li>
-                                <li>
-                                    <span>Type:  </span>
-                                    <span>P2E Game</span>
-                                </li>
-                                <li>
-                                    <span>IA SCORE:  </span>
-                                    <span>7/10</span>
-                                </li>
-                                <li>
-                                    <span>Supply: </span>
-                                    <span>TBA</span>
-                                </li>
-                            </ul>
-                            <ul className="rt-reviewfilterdetail">
-                                <li>
-                                    <span>Team: </span>
-                                    <span>Doxxed. Proven Track Record</span>
-                                </li>
-                                <li>
-                                    <span>Roadmap/Utility: </span>
-                                    <span>TBA</span>
-                                </li>
-                                <li>
-                                    <span>Some Alpha:  </span>
-                                    <span> The Co-Founders have worked on
-                                        previously successful projects for mobile games. Staking
-                                        and interesting tokenomics are mentioned in their
-                                        Lite Paper
-                                    </span>
-                                </li>
-                            </ul>
-
-                        </div>
-                    </div>
-                </div>
+          <figure className="rt-reviewimg">
+            <img
+              src={
+                currentProject?.image
+                  ? currentProject.image
+                  : "../../images/01.png"
+              }
+            />
+          </figure>
+          <div className="rt-reviewhead">
+            <div className="rt-reviewheading">
+              <h2>
+                {currentProject?.name
+                  ? currentProject?.name
+                  : currentProject?.title}
+              </h2>
+              <div className="rt-socialreview">
+                <ul>
+                  <li>
+                    <span>Twitter created:</span>
+                    <span>
+                      {moment(currentProject?.createdDate).format(
+                        "MMM DD, YYYY"
+                      )}
+                    </span>
+                  </li>
+                  <li>
+                    <span>First Tweet:</span>
+                    <span>
+                      {moment(currentProject?.foundAt).format("MMM DD, YYYY")}
+                    </span>
+                  </li>
+                </ul>
+                <ul>
+                  <span>BIO</span>: {currentProject?.bio}
+                </ul>
+              </div>
             </div>
-        </Fragment>
-    )
+            <div className="rt-reviewbody">
+              <ul className="rt-reviewfilterdetail">
+                <li>
+                  <span>EB count: </span>
+                  <span>{currentProject?.ebCount}</span>
+                </li>
+                <li>
+                  <span>Notable Followers Count: </span>
+                  <span>{currentProject?.notableFollowersCount}</span>
+                </li>
+                <li>
+                  <span>Followers: </span>
+                  <span>{currentProject?.followers}</span>
+                </li>
+              </ul>
+              <ul className="rt-reviewfilterdetail">
+                <li>
+                  <span>24h: </span>
+                  <span>{currentProject?.changes?._24h.count}</span>
+                </li>
+                <li>
+                  <span>7d: </span>
+                  <span>{currentProject?.changes?._7d.count}</span>
+                </li>
+                <li>
+                  <span>Tweets: </span>
+                  <span>{currentProject?.tweets}</span>
+                </li>
+                <li>
+                  <span>Notable Followers: </span>
+                  <span>{currentProject?.notableFollowers}</span>
+                </li>
+                {user?.roles.includes("admin") && (
+                  <>
+                    <li>
+                      <span>EB Score: </span>
+                      <span>{currentProject?.ebScore}</span>
+                    </li>
+                    <li>
+                      <span>EBs: </span>
+                      <span> {currentProject?.ebs}</span>
+                    </li>
+                  </>
+                )}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Fragment>
+  );
 }

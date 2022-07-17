@@ -6,7 +6,7 @@ export default function Filter(){
             <form className="rt-formtheme">
                 <fieldset>
                     <legend>Filter</legend>
-                    <div className="form-group">
+                    {/* <div className="form-group">
                         <label>Type</label>
                         <div className="rt-filterinput">
                             <input type="text" placeholder="Any" />
@@ -23,20 +23,9 @@ export default function Filter(){
                         <div className="rt-filterinput">
                             <input type="text" placeholder="Type..." />
                         </div>
-                    </div>
+                    </div> */}
                     <div className="form-group">
-                        <label>IA Count</label>
-                        <div className="rt-filterinput">
-                            <div className="rt-inputwidthfifty">
-                                <input type="text" placeholder="min" />
-                            </div>
-                            <div className="rt-inputwidthfifty">
-                                <input type="text" placeholder="max" />
-                            </div>
-                        </div>
-                    </div>
-                    <div className="form-group">
-                        <label>IA Score	</label>
+                        <label>EB Count</label>
                         <div className="rt-filterinput">
                             <div className="rt-inputwidthfifty">
                                 <input type="text" placeholder="min" />
@@ -58,7 +47,29 @@ export default function Filter(){
                         </div>
                     </div>
                     <div className="form-group">
+                        <label>Tweets</label>
+                        <div className="rt-filterinput">
+                            <div className="rt-inputwidthfifty">
+                                <input type="text" placeholder="min" />
+                            </div>
+                            <div className="rt-inputwidthfifty">
+                                <input type="text" placeholder="max" />
+                            </div>
+                        </div>
+                    </div>
+                    {/* <div className="form-group">
                         <label>Following</label>
+                        <div className="rt-filterinput">
+                            <div className="rt-inputwidthfifty">
+                                <input type="text" placeholder="min" />
+                            </div>
+                            <div className="rt-inputwidthfifty">
+                                <input type="text" placeholder="max" />
+                            </div>
+                        </div>
+                    </div> */}
+                    <div className="form-group">
+                        <label>24h Change</label>
                         <div className="rt-filterinput">
                             <div className="rt-inputwidthfifty">
                                 <input type="text" placeholder="min" />
@@ -69,7 +80,7 @@ export default function Filter(){
                         </div>
                     </div>
                     <div className="form-group">
-                        <label>24h Change</label>
+                        <label>7d Change</label>
                         <div className="rt-filterinput">
                             <div className="rt-inputwidthfifty">
                                 <input type="text" placeholder="min" />

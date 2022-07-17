@@ -1,26 +1,50 @@
 import next from "next";
 import Link from "next/link";
-import { Fragment } from "react";
+import { Fragment, useEffect, useState } from "react";
 import Filter from "../../component/filter/Filter";
 import Header from "../../component/header/Header";
 import Sidebar from "../../component/sidebar/Sidebar";
-import Button from 'react-bootstrap/Button';
-import Modal, { ModalProps } from 'react-bootstrap/Modal';
+import Button from "react-bootstrap/Button";
+import Modal, { ModalProps } from "react-bootstrap/Modal";
 import React from "react";
 import { Omit, BsPrefixProps } from "react-bootstrap/esm/helpers";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
-import { Circles } from 'react-loader-spinner';
+import { Circles } from "react-loader-spinner";
+import { projectService } from "../../services/project.service";
+import ReactPaginate from "react-paginate";
+import { useDispatch } from "react-redux";
+import { projectActions } from "../../store/project/project";
+import Router from "next/router";
 
-
-export function MyVerticallyCenteredModal(props: JSX.IntrinsicAttributes & Omit<Pick<React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>, "key" | keyof React.HTMLAttributes<HTMLDivElement>> & { ref?: ((instance: HTMLDivElement | null) => void) | React.RefObject<HTMLDivElement> | null | undefined; }, BsPrefixProps<"div"> & ModalProps> & BsPrefixProps<"div"> & ModalProps & { children?: React.ReactNode; }) {
-    return (
-        <Modal
-            {...props}
-            size="lg"
-            aria-labelledby="contained-modal-title-vcenter"
-            centered
-        >
-            {/* <Modal.Header closeButton>
+export function MyVerticallyCenteredModal(
+  props: JSX.IntrinsicAttributes &
+    Omit<
+      Pick<
+        React.DetailedHTMLProps<
+          React.HTMLAttributes<HTMLDivElement>,
+          HTMLDivElement
+        >,
+        "key" | keyof React.HTMLAttributes<HTMLDivElement>
+      > & {
+        ref?:
+          | ((instance: HTMLDivElement | null) => void)
+          | React.RefObject<HTMLDivElement>
+          | null
+          | undefined;
+      },
+      BsPrefixProps<"div"> & ModalProps
+    > &
+    BsPrefixProps<"div"> &
+    ModalProps & { children?: React.ReactNode }
+) {
+  return (
+    <Modal
+      {...props}
+      size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+    >
+      {/* <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
             Modal heading
           </Modal.Title>
@@ -36,17 +60,84 @@ export function MyVerticallyCenteredModal(props: JSX.IntrinsicAttributes & Omit<
         <Modal.Footer>
           <Button onClick={props.onHide}>Close</Button>
         </Modal.Footer> */}
-            <Filter />
-        </Modal>
-    );
+      <Filter />
+    </Modal>
+  );
 }
 
 const Project = () => {
-    const [modalShow, setModalShow] = React.useState(false);
+  const dispatch = useDispatch();
 
+  const [modalShow, setModalShow] = React.useState(false);
+  const [projects, setProjects] = useState<any>([]);
+  const [loading, setLoading] = useState<boolean>();
+  const [searchValue, setSearchValue] = useState(""); 
+  const [state, setState] = useState<any>({
+    current_page: 1,
+    pages: 1,
+    per_page: 10,
+    total_projects: 0,
+  });
+
+  const handleProjectSelect = (project: any) => {
+    dispatch(projectActions.currentProjectDetails(project))
+    Router.push("/review")
+  }
+
+  const getProjects = async (page = 1) => {
+    try {
+      setLoading(true);
+      let res = await projectService.getAllProjects({
+        page: page,
+        resPerPage: state.per_page,
+        search: searchValue,
+      });
+      setProjects(res?.data?.data?.projects);
+      setState({
+        current_page: res?.data?.data?.current_page,
+        pages: res?.data?.data?.pages,
+        per_page: res?.data?.data?.per_page,
+        total_projects: res?.data?.data?.total_projects,
+      });
+      setLoading(false);
+    } catch (error) {
+      console.log(error);
+      setLoading(false);
+    }
+  };
+
+  function isLetter(str: any) {
     return (
-        <Fragment>
-            {/* <div className="rt-loader">
+      (str.length === 1 && str.match(/[a-z0-9]/i)) ||
+      str.match(/\s/i) ||
+      str.match(/\b/i)
+    );
+  }
+
+  const handleChange = (event: any) => {
+    if (event.target.value.length > 1) {
+      if (isLetter(event.target.value)) setSearchValue(event.target.value);
+    } else {
+      setSearchValue("");
+    }
+  };
+
+  const handlePagination = (data: any) => {
+    getProjects(data.selected + 1);
+  };
+
+  useEffect(() => {
+    const timeoutId = setTimeout(() => getProjects(), 500);
+    return () => clearTimeout(timeoutId);
+  }, [searchValue]);
+
+  useEffect(() => {
+    getProjects();
+  }, []);
+
+  return (
+    <Fragment>
+      {/* <div className="rt-loader">
                 <Circles
                     height="100"
                     width="100"
@@ -54,610 +145,120 @@ const Project = () => {
                     ariaLabel='loading'
                 />
             </div> */}
-            <Header />
-            <div className="rt-projects">
+      <Header />
+      <div className="rt-projects">
+        <Sidebar />
+        <div className="rt-projecttableholder">
+          <div className="rt-pagetitle">
+            <h2>Project</h2>
+            <h3>Total Projects = {state.total_projects}</h3>
+          </div>
+          <div className="rt-pagetop">
+            <div className="rt-searchform">
+              <form className="rt-formtheme">
+                <fieldset>
+                  <div className="form-group">
+                    <input
+                      type="text"
+                      onChange={handleChange}
+                      name="search"
+                      placeholder="search"
+                    />
+                    <Link href="">
+                      <a>
+                        <img src="../../images/search.svg" />
+                      </a>
+                    </Link>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+            <div className="rt-pagefilterholder">
+              <Button variant=" " onClick={() => setModalShow(true)}>
+                <i className="icon-equalizer"></i>
+                <span>Filter</span>
+              </Button>
 
-                <Sidebar />
-                <div className="rt-projecttableholder">
-                    <div className="rt-pagetitle">
-                        <h2>Project</h2>
-                        <h3>Total Projects = 566</h3>
-                    </div>
-                    <div className="rt-pagetop">
-                        <div className="rt-searchform">
-                            <form className="rt-formtheme">
-                                <fieldset>
-                                    <div className="form-group">
-                                        <input type="text" name="search" placeholder="search" />
-                                        <Link href="">
-                                            <a>
-                                                <img src="../../images/search.svg" />
-                                            </a>
-                                        </Link>
-                                    </div>
-                                </fieldset>
-                            </form>
-                        </div>
-                        <div className="rt-pagefilterholder">
-                            <Button variant=" " onClick={() => setModalShow(true)}>
-                                <i className="icon-equalizer"></i>
-                                <span>Filter</span>
-                            </Button>
-
-                            <MyVerticallyCenteredModal
-                                show={modalShow}
-                                onHide={() => setModalShow(false)}
-                            />
-                        </div>
-                    </div>
-                    <div className="rt-projecttable">
-                        <table className="rt-themetable">
-                            <thead>
-                                <tr>
-                                    <th>Project</th>
-                                    <th>Socials</th>
-                                    <th>Type </th>
-                                    <th>I.A. Count</th>
-                                    <th>Following</th>
-                                    <th>Followers</th>
-                                    <th>Tweets</th>
-                                    <th>24h Followers Change  </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <div className="rt-userimage">
-                                            <img src="../../images/1.png" />
-                                            <span>Astersnft</span>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <ul className="rt-socialicon">
-                                            <li>
-                                                <Link href="">
-                                                    <a>
-                                                        <img src="../../images/twitter.svg" alt="social icon" />
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="">
-                                                    <a>
-                                                        <img src="../../images/instagram.svg" alt="social icon" />
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="">
-                                                    <a>
-                                                        <img src="../../images/medium.svg" alt="social icon" />
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="">
-                                                    <a>
-                                                        <img src="../../images/discord.svg" alt="social icon" />
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                        </ul>
-                                    </td>
-                                    <td>PFP</td>
-                                    <td>42</td>
-                                    <td>4</td>
-                                    <td>2882</td>
-                                    <td>4</td>
-                                    <td className="rt-followerchange">
-                                        <span>+652</span>
-                                        <span>21.47%</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div className="rt-userimage">
-                                            <img src="../../images/1.png" />
-                                            <span>Astersnft</span>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <ul className="rt-socialicon">
-                                            <li>
-                                                <Link href="">
-                                                    <a>
-                                                        <img src="../../images/twitter.svg" alt="social icon" />
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="">
-                                                    <a>
-                                                        <img src="../../images/instagram.svg" alt="social icon" />
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="">
-                                                    <a>
-                                                        <img src="../../images/medium.svg" alt="social icon" />
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="">
-                                                    <a>
-                                                        <img src="../../images/discord.svg" alt="social icon" />
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                        </ul>
-                                    </td>
-                                    <td>PFP</td>
-                                    <td>42</td>
-                                    <td>4</td>
-                                    <td>2882</td>
-                                    <td>4</td>
-                                    <td className="rt-followerchange">
-                                        <span>+652</span>
-                                        <span>21.47%</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div className="rt-userimage">
-                                            <img src="../../images/1.png" />
-                                            <span>Astersnft</span>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <ul className="rt-socialicon">
-                                            <li>
-                                                <Link href="">
-                                                    <a>
-                                                        <img src="../../images/twitter.svg" alt="social icon" />
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="">
-                                                    <a>
-                                                        <img src="../../images/instagram.svg" alt="social icon" />
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="">
-                                                    <a>
-                                                        <img src="../../images/medium.svg" alt="social icon" />
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="">
-                                                    <a>
-                                                        <img src="../../images/discord.svg" alt="social icon" />
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                        </ul>
-                                    </td>
-                                    <td>PFP</td>
-                                    <td>42</td>
-                                    <td>4</td>
-                                    <td>2882</td>
-                                    <td>4</td>
-                                    <td className="rt-followerchange">
-                                        <span>+652</span>
-                                        <span>21.47%</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div className="rt-userimage">
-                                            <img src="../../images/1.png" />
-                                            <span>Astersnft</span>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <ul className="rt-socialicon">
-                                            <li>
-                                                <Link href="">
-                                                    <a>
-                                                        <img src="../../images/twitter.svg" alt="social icon" />
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="">
-                                                    <a>
-                                                        <img src="../../images/instagram.svg" alt="social icon" />
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="">
-                                                    <a>
-                                                        <img src="../../images/medium.svg" alt="social icon" />
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="">
-                                                    <a>
-                                                        <img src="../../images/discord.svg" alt="social icon" />
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                        </ul>
-                                    </td>
-                                    <td>PFP</td>
-                                    <td>42</td>
-                                    <td>4</td>
-                                    <td>2882</td>
-                                    <td>4</td>
-                                    <td className="rt-followerchange">
-                                        <span>+652</span>
-                                        <span>21.47%</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div className="rt-userimage">
-                                            <img src="../../images/1.png" />
-                                            <span>Astersnft</span>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <ul className="rt-socialicon">
-                                            <li>
-                                                <Link href="">
-                                                    <a>
-                                                        <img src="../../images/twitter.svg" alt="social icon" />
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="">
-                                                    <a>
-                                                        <img src="../../images/instagram.svg" alt="social icon" />
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="">
-                                                    <a>
-                                                        <img src="../../images/medium.svg" alt="social icon" />
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="">
-                                                    <a>
-                                                        <img src="../../images/discord.svg" alt="social icon" />
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                        </ul>
-                                    </td>
-                                    <td>PFP</td>
-                                    <td>42</td>
-                                    <td>4</td>
-                                    <td>2882</td>
-                                    <td>4</td>
-                                    <td className="rt-followerchange">
-                                        <span>+652</span>
-                                        <span>21.47%</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div className="rt-userimage">
-                                            <img src="../../images/1.png" />
-                                            <span>Astersnft</span>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <ul className="rt-socialicon">
-                                            <li>
-                                                <Link href="">
-                                                    <a>
-                                                        <img src="../../images/twitter.svg" alt="social icon" />
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="">
-                                                    <a>
-                                                        <img src="../../images/instagram.svg" alt="social icon" />
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="">
-                                                    <a>
-                                                        <img src="../../images/medium.svg" alt="social icon" />
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="">
-                                                    <a>
-                                                        <img src="../../images/discord.svg" alt="social icon" />
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                        </ul>
-                                    </td>
-                                    <td>PFP</td>
-                                    <td>42</td>
-                                    <td>4</td>
-                                    <td>2882</td>
-                                    <td>4</td>
-                                    <td className="rt-followerchange">
-                                        <span>+652</span>
-                                        <span>21.47%</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div className="rt-userimage">
-                                            <img src="../../images/1.png" />
-                                            <span>Astersnft</span>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <ul className="rt-socialicon">
-                                            <li>
-                                                <Link href="">
-                                                    <a>
-                                                        <img src="../../images/twitter.svg" alt="social icon" />
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="">
-                                                    <a>
-                                                        <img src="../../images/instagram.svg" alt="social icon" />
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="">
-                                                    <a>
-                                                        <img src="../../images/medium.svg" alt="social icon" />
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="">
-                                                    <a>
-                                                        <img src="../../images/discord.svg" alt="social icon" />
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                        </ul>
-                                    </td>
-                                    <td>PFP</td>
-                                    <td>42</td>
-                                    <td>4</td>
-                                    <td>2882</td>
-                                    <td>4</td>
-                                    <td className="rt-followerchange">
-                                        <span>+652</span>
-                                        <span>21.47%</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div className="rt-userimage">
-                                            <img src="../../images/1.png" />
-                                            <span>Astersnft</span>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <ul className="rt-socialicon">
-                                            <li>
-                                                <Link href="">
-                                                    <a>
-                                                        <img src="../../images/twitter.svg" alt="social icon" />
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="">
-                                                    <a>
-                                                        <img src="../../images/instagram.svg" alt="social icon" />
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="">
-                                                    <a>
-                                                        <img src="../../images/medium.svg" alt="social icon" />
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="">
-                                                    <a>
-                                                        <img src="../../images/discord.svg" alt="social icon" />
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                        </ul>
-                                    </td>
-                                    <td>PFP</td>
-                                    <td>42</td>
-                                    <td>4</td>
-                                    <td>2882</td>
-                                    <td>4</td>
-                                    <td className="rt-followerchange">
-                                        <span>+652</span>
-                                        <span>21.47%</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div className="rt-userimage">
-                                            <img src="../../images/1.png" />
-                                            <span>Astersnft</span>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <ul className="rt-socialicon">
-                                            <li>
-                                                <Link href="">
-                                                    <a>
-                                                        <img src="../../images/twitter.svg" alt="social icon" />
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="">
-                                                    <a>
-                                                        <img src="../../images/instagram.svg" alt="social icon" />
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="">
-                                                    <a>
-                                                        <img src="../../images/medium.svg" alt="social icon" />
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="">
-                                                    <a>
-                                                        <img src="../../images/discord.svg" alt="social icon" />
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                        </ul>
-                                    </td>
-                                    <td>PFP</td>
-                                    <td>42</td>
-                                    <td>4</td>
-                                    <td>2882</td>
-                                    <td>4</td>
-                                    <td className="rt-followerchange">
-                                        <span>+652</span>
-                                        <span>21.47%</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div className="rt-userimage">
-                                            <img src="../../images/1.png" />
-                                            <span>Astersnft</span>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <ul className="rt-socialicon">
-                                            <li>
-                                                <Link href="">
-                                                    <a>
-                                                        <img src="../../images/twitter.svg" alt="social icon" />
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="">
-                                                    <a>
-                                                        <img src="../../images/instagram.svg" alt="social icon" />
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="">
-                                                    <a>
-                                                        <img src="../../images/medium.svg" alt="social icon" />
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="">
-                                                    <a>
-                                                        <img src="../../images/discord.svg" alt="social icon" />
-                                                    </a>
-                                                </Link>
-                                            </li>
-                                        </ul>
-                                    </td>
-                                    <td>PFP</td>
-                                    <td>42</td>
-                                    <td>4</td>
-                                    <td>2882</td>
-                                    <td>4</td>
-                                    <td className="rt-followerchange">
-                                        <span>+652</span>
-                                        <span>21.47%</span>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        {/* <figure className="rt-nodataimg">
+              <MyVerticallyCenteredModal
+                show={modalShow}
+                onHide={() => setModalShow(false)}
+              />
+            </div>
+          </div>
+          <div className="rt-projecttable">
+            <table className="rt-themetable">
+              <thead>
+                <tr>
+                  <th>Project</th>
+                  <th>Bio</th>
+                  <th>Eb count </th>
+                  <th>Notable Followers Count</th>
+                  <th>Notable Followers</th>
+                  <th>Followers</th>
+                  <th>24h Followers Change </th>
+                  <th>7d Followers Change </th>
+                  <th>Tweets</th>
+                </tr>
+              </thead>
+              <tbody>
+                {projects &&
+                  projects.length > 0 &&
+                  projects.map((project: any) => (
+                    <>
+                      <tr>
+                        <td>
+                          <div onClick={()=>{handleProjectSelect(project)}} className="rt-userimage">
+                            <img src="../../images/1.png" />
+                            {/* <img src={project ? project.image : "../../images/1.png"} /> */}
+                            <span>
+                              {project.name ? project.name : project.title}
+                            </span>
+                          </div>
+                        </td>
+                        <td>{project.bio}</td>
+                        <td>{project.ebCount}</td>
+                        <td>{project.notableFollowersCount}</td>
+                        <td>{project.notableFollowers}</td>
+                        <td>{project.followers}</td>
+                        {/* <td>{project.changes?._24h.count}</td> */}
+                        <td className="rt-followerchange">
+                          <span>{project.changes?._24h.count}</span>
+                          <span>{project.changes?._24h.percent}%</span>
+                        </td>
+                        <td className="rt-followerchange">
+                          <span>{project.changes?._7d.count}</span>
+                          <span>{project.changes?._7d.percent}%</span>
+                        </td>
+                        <td>{project.tweets}</td>
+                      </tr>
+                    </>
+                  ))}
+              </tbody>
+            </table>
+            {/* <figure className="rt-nodataimg">
                             <img src="../../images/nodata.webp" alt="no data" />
                         </figure> */}
-                    </div>
-                    <div className="rt-pagination">
-                        <ul>
-                            <li>
-                                <Link href="">
-                                    <a>
-                                        <img src="../../images/arrowperivous.svg" />
-                                    </a>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="">
-                                    <a className="rt-active">
-                                        1
-                                    </a>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="">
-                                    <a>
-                                        2
-                                    </a>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="">
-                                    <a>
-                                        3
-                                    </a>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="">
-                                    <a>
-                                        4
-                                    </a>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="">
-                                    <a>
-                                        ...
-                                    </a>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="">
-                                    <a>
-                                        <img src="../../images/arrownext.svg" />
-                                    </a>
-                                </Link>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </Fragment>
-    )
-}
+          </div>
+        </div>
+        <div className="rt-pagination">
+          <ReactPaginate
+            initialPage={0}
+            previousLabel={"<"}
+            nextLabel={">"}
+            breakLabel={"..."}
+            breakClassName={"break-me"}
+            pageCount={state.pages}
+            marginPagesDisplayed={1}
+            pageRangeDisplayed={1}
+            onPageChange={handlePagination}
+            containerClassName={"pagination"}
+            activeClassName={"rt-active"}
+            activeLinkClassName={"rt-active"}
+          />
+        </div>
+      </div>
+    </Fragment>
+  );
+};
 
 export default Project;

@@ -7,10 +7,12 @@ import { createWrapper } from "next-redux-wrapper";
 import { authReducer } from "./auth/auth";
 import { combineReducers } from "redux";
 import { appMode } from "../constants/env";
+import { projectReducer } from "./project/project";
 
 const rootReducers = combineReducers({
   // here we will be adding reducers
   auth: authReducer,
+  project: projectReducer,
 });
 
 const createNoopStorage = () => {
