@@ -5,11 +5,9 @@ const privacyPolicy = () => {
   return (
     <Fragment>
       <div className="rt-termsholder container">
-        <p className="c13"><span className="c4 c6">Coniun Terms and Conditions</span></p>
-        <p className="c1"><span className="c0">Last Update:</span><span className="c2">&nbsp;January 11, 2022</span></p>
-        <p className="c1"><span className="c5">These Terms and Conditions ("</span><span className="c0">Terms</span><span className="c5">") govern your ("</span><span className="c0">User</span><span className="c5">" or
-          “</span><span className="c0">you</span><span className="c5">” or ‘‘</span><span className="c0">your’’</span><span className="c5">) use of the </span><span className="c5">coniun.io website
-            a</span><span className="c5">nd Coniun</span><span className="c5">&nbsp;iO</span><span className="c5">S </span><span className="c5">app (referred to collectively as the "</span><span className="c0">Service</span><span className="c5">") operated by DIRECON INC</span><span>&nbsp;</span><span className="c5">("</span><span className="c0">Coniun</span><span className="c5">", "</span><span className="c0">us</span><span className="c5">", "</span><span className="c0">we</span><span className="c5">", or "</span><span className="c0">our</span><span className="c2">").</span></p>
+        <p className="c13"><span className="c4 c6">ALPHA RESEARCH TOOLS PRIVACY POLICY</span></p>
+        <p className="c1"><span className="c0">Last Update:</span><span className="c2">&nbsp;July 25, 2022</span></p>
+        <p className="c1">Alpha Research Tools B.V. ("us", "we", or "our") incorporated and registered in Ara Hill Top Building Unit A-6 Pletterijweg Oost 1. Curacao, operates the Alpha Research Tools Platform (hereinafter referred to as the "<span className="c0">Service(s)</span>").</p>
         <p className="c1"><span className="c4 c0">Acceptance of Terms</span></p>
         <p className="c1"><span className="c5">By accessing, using, visiting, or browsing the Platform and or the Service you accept
           and agree to be bound by these Terms and our </span><span className="c5">Privacy Policy. </span><span className="c2">If you do not agree to these Terms, do not use our Service and Platform.</span></p>
