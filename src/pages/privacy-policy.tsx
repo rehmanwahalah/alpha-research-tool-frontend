@@ -8,236 +8,201 @@ const privacyPolicy = () => {
         <p className="c13"><span className="c4 c6">ALPHA RESEARCH TOOLS PRIVACY POLICY</span></p>
         <p className="c1"><span className="c0">Last Update:</span><span className="c2">&nbsp;July 25, 2022</span></p>
         <p className="c1">Alpha Research Tools B.V. ("us", "we", or "our") incorporated and registered in Ara Hill Top Building Unit A-6 Pletterijweg Oost 1. Curacao, operates the Alpha Research Tools Platform (hereinafter referred to as the "<span className="c0">Service(s)</span>").</p>
-        <p className="c1"><span className="c4 c0">Acceptance of Terms</span></p>
-        <p className="c1"><span className="c5">By accessing, using, visiting, or browsing the Platform and or the Service you accept
-          and agree to be bound by these Terms and our </span><span className="c5">Privacy Policy. </span><span className="c2">If you do not agree to these Terms, do not use our Service and Platform.</span></p>
-        <p className="c1"><span className="c4 c0">Platform</span></p>
-        <p className="c1"><span className="c5">Coniun is a platform which you can discover non-fungible token, digital item and
-          crypto collectible (‘‘</span><span className="c0">Digital Assets</span><span className="c5">’’) projects and collections,</span><span>&nbsp;</span><span className="c2">view their
-            details, add them to your wishlist, view your friends’ activity, and view your owned digital
-            assets.</span></p>
-        <p className="c1"><span className="c4 c0">Account</span></p>
-        <p className="c1"><span className="c2">In order to access certain features of the Service, you must create an account by
-          signing in with one of the given methods on your profile page or link your Digital Assets marketplace
-          account by submitting your profile link or wallet address and verifying your account.</span></p>
-        <p className="c1"><span className="c2">When you create an account with us, you guarantee that you are above the age of 18,
-          and that the information you provide us is accurate, correct and up to date. Inaccurate, incorrect, or
-          obsolete information may result in the immediate termination of your account on the Service.</span></p>
-        <p className="c1"><span className="c2">You are responsible for maintaining the confidentiality of your account. You agree to
-          be fully responsible for any activity that occur through your account. You must notify us immediately upon
-          becoming aware of any breach of security or unauthorized use of your account.</span></p>
-        <p className="c1"><span className="c5">Coniun may require you to provide additional information and documents at the request
-          of any authorized public institution and organization or in case of application of any applicable law or
-          regulation.</span><span>&nbsp;</span><span className="c2">Coniun, at its sole discretion, may pause or cancel
-            your account in relation to this matter.</span></p>
-        <p className="c1"><span className="c0">Platform Rules</span></p>
-        <p className="c1"><span className="c2">You agree, warrant, represent and acknowledge that you will abide by these Terms, you
-          are solely responsible for your activities and you will not:</span></p>
+        <p className="c1">While providing our Service, we recognize the importance of your privacy and carry out our activities in line with the applicable data protection regulation including the EU General Data Protection Regulation (“<span className="c0">GDPR</span>”), the California Consumer Privacy Act (“<span className="c0">CCPA</span>”) and other relevant laws and regulations.</p>
+        <p className="c1">This Privacy Policy aims to specify how we collect, use, and disclose your personal data to provide you with the best level of our Service. By means of this Privacy Policy, we fulfil our obligation under Articles 13 and 14 of the GDPR to provide information on our processing activities to the relevant data subjects.</p>
+        <p className="c1">Unless otherwise defined in this Privacy Policy, the terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, accessible from here.</p>
+        <p className="c1"><span className="c4 c0">DISCLAIMER:</span></p>
+        <p className="c1">In some cases (especially when we obtain the personal data not from the data subjects, e.g. from the Twitter or OpenSea platforms or other social networks and marketplaces) we are incapable to inform each data subject rather than by means of this Privacy Policy.</p>
+        <p className="c1">In that regard, we rely on Recital 62 and Article 14(5)(b), as the provision of information to the data subjects proves impossible or would involve a disproportionate effort (in particular for processing for statistical purposes). Nevertheless, we commit to implement appropriate measures to protect the data subject’s rights and freedoms and legitimate interests.</p>
+        <p className="c1"><span className="c0">Definitions</span></p>
         <ul className="c8 lst-kix_list_1-0 start">
-          <li className="c3 li-bullet-0"><span className="c2">violate any law, regulation, statute, intellectual property or other
-            third party right or contract;</span></li>
-          <li className="c3 li-bullet-0"><span className="c2">provide false or misleading information;</span></li>
-          <li className="c3 li-bullet-0"><span className="c2">use the Service in any manner that could interfere with, damage,
-            negatively affect, disable, overburden or impair the functioning of the Service in any manner;</span>
-          </li>
-          <li className="c3 li-bullet-0"><span className="c2">jeopardize the security of any account in any way;</span></li>
-          <li className="c3 li-bullet-0"><span className="c2">restrict or inhibit any other person from using the Service;</span>
-          </li>
-          <li className="c3 li-bullet-0"><span className="c2">act in a way that is harmful, threatening, abusive, harassing,
-            degrading, hateful or intimidating, or otherwise fail to respect the rights and dignity of
-            others;</span></li>
-          <li className="c3 li-bullet-0"><span className="c2">copy, store, reproduce, modify, adapt, translate, create derivative
-            works of, sell, rent, lease, loan, distribute or otherwise exploit any portion of the Service or the
-            content therein;</span></li>
-          <li className="c3 li-bullet-0"><span className="c2">disseminate any software or interact with any API in any
-            manner;</span></li>
-          <li className="c3 li-bullet-0"><span className="c2">decompile or reverse engineer any aspect of the Service or attempt
-            to obtain the source code;</span></li>
-          <li className="c3 li-bullet-0"><span className="c2">violate the security of any computer network;</span></li>
-          <li className="c3 li-bullet-0"><span className="c2">process personal data collected from our Service in a manner that
-            does not fully ensure compliance with data protection regulations;</span></li>
-          <li className="c3 li-bullet-0"><span className="c2">abuse the Platform or use the Service for any illegal or
-            unauthorized purpose.</span></li>
+          <li className="c3 li-bullet-0"><span className="c0">Platform</span><span>Platform is the alpharesearch.tools website.</span></li>
+          <li className="c3 li-bullet-0"><span className="c0">Personal Data</span><span>Personal Data means any information relating to an identified or identifiable natural person.</span></li>
+          <li className="c3 li-bullet-0"><span className="c0">Social Media Platform(s): </span><span>Twitter, Discord and other social media platforms in which the Alpha Research Tools Users can utilize the Services.</span></li>
+          <li className="c3 li-bullet-0"><span className="c0">Marketplace(s):</span><span>OpenSea and other marketplaces for NFTs, digital items and crypto collectibles which the Alpha Research Tools Users can utilize the Services.</span></li>
+          <li className="c3 li-bullet-0"><span className="c0">Data Subjects</span><span>Data Subject is the identified or identifiable person to whom personal data relates. We process personal data of two main categories of Data Subjects.</span></li>
+          <li className="c3 li-bullet-0"><span>Alpha Research Tools Users: Individuals who</span></li>
+          <li className="c3 li-bullet-0"><span>browse the Platform, or</span></li>
+          <li className="c3 li-bullet-0"><span>registered with the Alpha Research Tools Platform through their Twitter account, or</span></li>
+          <li className="c3 li-bullet-0"><span>registered with the Alpha Research Tools Platform through their Twitter account and linked their OpenSea account.</span></li>
+          <li className="c3 li-bullet-0"><span>Social Media Platform or Marketplace Users: Individuals</span></li>
+          <li className="c3 li-bullet-0"><span>who are friends with or followed by Alpha Research Tools Users on Social Media Platforms or Marketplaces.</span></li>
+          <li className="c3 li-bullet-0"><span>who bought, sold, or owned an NFT, digital item or crypto collectible which has a large trading volume.</span></li>
+          <li className="c3 li-bullet-0"><span>whose accounts are added by Alpha Research Tools Users into Alpha Research Tools’s system to follow up the transactions of such accounts, as such account related data is public and anonymous data stored in blockchain.</span></li>
+          <li className="c3 li-bullet-0"><span className="c0">Data Controller</span><span>Data Controller means the natural or legal person (either alone or jointly or in common with other persons) who determines the purposes and means of the processing of personal data.</span></li>
+          <li className="c3 li-bullet-0"><span>We act as a Data Controller when we process personal data of the Alpha Research Tools Users and the Social Media Platform or Marketplace Users.</span></li>
+          <li className="c3 li-bullet-0"><span>The Alpha Research Tools Users may also act as Data Controllers when they process personal data of the Social Media Platform or Marketplace Users.</span></li>
+          <li className="c3 li-bullet-0"><span className="c0">Data Processor</span><span>Data Processor means any natural or legal person who processes the data on behalf of the Data Controller.</span></li>
+          <li className="c3 li-bullet-0"><span>We may use the services of various Data Processors in order to provide better service for you.</span></li>
+          <li className="c3 li-bullet-0"><span className="c0">Collection of Your Personal Data</span><span>We may collect the following personal data about you:</span></li>
+          <li className="c3 li-bullet-0"><span className='c0'>i.Alpha Research Tools User</span><span>Full name, Social Media Platform username, profile picture and sign in information, and other personal data that you voluntarily provide to us: We may collect such personal data from you directly when you provide us with such information, e.g. when you register with our platform, contact us or add an item to your wish list etc.</span></li>
+          <li className="c3 li-bullet-0"><span>If you link your Marketplace account; account information, profile link, and wallet address; NFT, digital item or crypto collectibles bought, sold, or owned; NFT project and collection information, price, and activity details.</span></li>
+          <li className="c3 li-bullet-0"><span>Information about whether you are an owner of an NFT released by us.</span></li>
+          <li className="c3 li-bullet-0"><span>IP address, browser type, browser version, the pages of our Service that visited, the time and date of visit, the time spent on those pages, unique device identifiers and other diagnostic data: We (and third party service providers acting on our behalf) use cookies and other tools (such as web analytic tools and pixel tags) to automatically collect information about you when you use our websites and apps.</span></li>
+          <li className="c3 li-bullet-0"><span>Usage data: We may collect your personal data about how you use our Services from our own records. Your feedbacks and any information that you voluntarily share with us about your experience of using our Services.</span></li>
+          <li className="c3 li-bullet-0"><span>Payment information.</span></li>
         </ul>
-        <p className="c1"><span className="c2">Coniun reserves the right (but does not have the obligation) to remove any content
-          from the Services at any time, for any reason. You remain solely responsible for all content that you
-          create, share, upload, post, send or store through the Service.</span></p>
-        <p className="c1"><span className="c0 c4">Coniun’s Own NFTs</span></p>
-        <p className="c1"><span className="c5">Coniun may release, from time to time, a unique Ethereum blockchain-tracked,
-          non-fungible token (‘‘</span><span className="c0">Coniun NFT</span><span className="c5">’’)
-            by minting the original artwork (‘‘</span><span className="c0">Artwork’’</span><span className="c2">).</span></p>
-        <p className="c1"><span className="c2">Coniun, at its sole discretion, may grant the right to purchase Coniun NFT to a
-          selected audience. Prices of such Coniun NFT will be determined by Coniun. </span></p>
-        <p className="c1"><span className="c5">You may purchase Coniun NFT originally from Coniun or on a marketplace from a
-          legitimate owner. (‘‘</span><span className="c0">Coniun NFT Owner</span><span className="c2">’’)</span></p>
-        <p className="c1"><span className="c5">Subject to compliance with the terms of this Agreement,</span><span className="c5">&nbsp;Coniun hereby grants Coniun NFT Owners, a worldwide, non-exclusive, personal, limited
-          license to display the Coniun NFT and Artwork, solely with respect to the Coniun NFT that you own, including
-          on social media platforms, digital galleries, marketplaces or otherwise, in association with your offer to
-          sell or trade your Coniun NFT or other legitimate motives. This license does not grant you any rights
-          regarding the Artwork separate from the associated NFT</span><span className="c5">.</span><span>&nbsp;</span><span className="c2">You acknowledge and agree that Coniun owns all legal
-            rights including all copyrights, title and interest regarding the Artwork.</span></p>
-        <p className="c1"><span className="c2">The license granted herein applies only to the extent that you continue to own the
-          Coniun NFT. If at any time you sell, trade, donate, give away, or transfer your Coniun NFT, the license
-          granted herein shall be transferred with the Coniun NFT, to the new owner, and you will have no further
-          rights regarding Coniun NFT or the Artwork associated with that Coniun NFT.</span></p>
-        <p className="c1"><span className="c0">Violations</span></p>
-        <p className="c7"><span className="c2">Coniun NFT Owner agrees not to, or will not permit any third party to: </span></p>
-        <ul className="c8 lst-kix_list_3-0 start">
-          <li className="c3 li-bullet-0"><span className="c2">modify the Artwork associated with your Coniun NFT in any way;
-          </span></li>
-          <li className="c3 li-bullet-0"><span className="c2">use the Artwork separate from the associated NFT to advertise,
-            market, or sell any product or service; </span></li>
-          <li className="c3 li-bullet-0"><span className="c2">use the Coniun NFT or Artwork in a way that is harmful, threatening,
-            abusive, harassing, degrading, hateful, malicious, offensive or otherwise violating any right or
-            applicable law or regulation; </span></li>
-          <li className="c3 li-bullet-0"><span className="c2">act with ill will to decrease the value of Coniun NFT; </span></li>
-          <li className="c3 li-bullet-0"><span className="c2">intentionally attempt to harm Coniun in any way; </span></li>
-          <li className="c3 li-bullet-0"><span className="c2">attempt to mint, tokenize, or create a digital token representing
-            the Artwork on any platform; </span></li>
-          <li className="c3 li-bullet-0"><span className="c2">falsify, misrepresent, or conceal the authorship of the Artwork or
-            the Coniun NFT; </span></li>
-          <li className="c12 li-bullet-0"><span className="c2">make copies or derivative works embodying the Artwork or Coniun
-            NFT.</span></li>
+        <p className="c1"><span className="c0">Social Media Platform or Marketplace Users</span></p>
+        <p className="c1">We collect personal data of you from legitimate sources, including information from commercially available sources, such as public databases and data aggregators, and information from third parties.</p>
+        <ul className="c8 lst-kix_list_1-0 start">
+          <li className="c3 li-bullet-0">Display name, Social Media Platform username and profile picture.</li>
+          <li className="c3 li-bullet-0">NFT, digital item or crypto collectibles bought, sold, or owned, project and collection information, price, wallet address and activity details.</li>
+          <li className="c3 li-bullet-0">Other publicly available information</li>
         </ul>
-        <p className="c1"><span className="c5">You are responsible for verifying the identity of third party platforms that sell
-          NFTs by using our name</span><span className="c5">.</span></p>
-        <p className="c1"><span className="c2">Refund requests may be considered by Coniun on a case-by-case basis and granted in
-          sole discretion of Coniun.</span></p>
-        <p className="c1"><span className="c2">You will be responsible for withholding, filing, and reporting all taxes and other
-          governmental duties associated with your activity in connection with the Coniun NFT and other
-          Services.</span></p>
-        <p className="c1"><span className="c4 c0">Electronic Communications</span></p>
-        <p className="c1"><span className="c2">We may provide you with electronic communications relating to the Service and your
-          account (e.g. confirmation messages, notices, new features and product updates) in electronic form only, for
-          example via emails to your email address if provided by you.</span></p>
-        <p className="c1"><span className="c2">When you share your electronic address with us, we have a legitimate interest in
-          providing you with direct marketing communications (e.g. discounts, promotions, offers, newsletters). You
-          may always unsubscribe from our direct marketing communications by clicking on the "unsubscribe"
-          link located on the bottom of our e-mails. This does not opt you out of receiving Service-related electronic
-          communications.</span></p>
-        <p className="c1"><span className="c4 c0">Intellectual Property</span></p>
-        <p className="c1"><span className="c2">Without prejudice to the provisions about Coniun NFT, you hereby agree that Coniun
-          owns all intellectual property rights in the Service. All present and future rights to intellectual property
-          including but not limited to inventions, discoveries, trade secrets, secret processes, know-hows, concepts,
-          ideas, information, processes, data, formulas, improvements, work products developed in whole or in part by
-          Coniun, trademarks (whether registered or not), patents, designs, copyright, and corresponding property
-          rights under the laws of any jurisdiction belong to Coniun. We will own exclusive rights to any feedback,
-          suggestions, ideas, or other information or materials that you provide regarding Coniun.</span></p>
-        <p className="c1"><span className="c2">Without prejudice to the provisions about Coniun NFT; the Service and its original
-          content, features and functionality are and will remain the exclusive property of Coniun and its licensors.
-          You agree that you will not reproduce, duplicate, copy, sell, trade or resell the Service for any purpose.
-          You must not obscure, alter, remove or delete any copyright or other proprietary notices contained in the
-          Service. You will not copy, modify, adapt, translate or otherwise create derivative works of the Service.
-          You warrant that you will not attempt or assist others to attempt or actually reverse engineer, decompile,
-          disassemble or otherwise attempt to discover the source code of the software. You agree to comply with all
-          applicable laws and regulations in your use of and access to the Service.</span></p>
-        <p className="c1"><span className="c4 c0">Privacy</span></p>
-        <p className="c1"><span className="c2">We value your policy and are committed to comply with the EU General Data Protection
-          Regulation (GDPR) and the California Consumer Privacy Act (CCPA). For more information, please see our
-          Privacy Policy on our Platform.</span></p>
-        <p className="c1"><span className="c2">You hereby warrant and undertake to comply with the data protection regulations. You
-          agree that you will responsibly use, transfer, and process the personal data you received from Coniun. You
-          hereby confirm that you independently determine the purposes and means of the processing of personal data,
-          act as an independent controller and will take all necessary measures.</span></p>
-        <p className="c1" id="h.gjdgxs"><span className="c5">Direct notification of individuals you are friends with or follow
-          (‘‘</span><span className="c0">Social Media Platform or Marketplace Users</span><span className="c2">'’) by Coniun would involve a disproportionate effort (where processing is carried out
-            for statistical purposes) under Art. 14. paragraph 5 (b) GDPR. Therefore, we are not obliged to notify them.
-            You hereby agree to take all necessary actions to notify them. Also, there is a notification in our Privacy
-            Policy. </span></p>
-        <p className="c1"><span className="c2">If any requests information about the User who collected his/her personal data,
-          Coniun must disclose your information to the relevant Social Media Platform or Marketplace User to act in
-          accordance with the data protection regulations.</span></p>
-        <p className="c1"><span className="c2">You are prohibited from using the personal data collected from our Service after
-          Coniun or data subject request to remove it, if you do not have any further legitimate basis for processing
-          such personal data. Such personal data must be deleted within 72 hours following the notification. In that
-          case you are also required to ensure any third party to whom you transfer such personal data to delete such
-          information as well.</span></p>
-        <p className="c1"><span className="c4 c0">Third Party Materials</span></p>
-        <p className="c1"><span className="c2">Our Service may display, include, or make available third-party content that Coniun
-          has no control over or may contain links to third party web sites or services that are not owned or
-          controlled by Coniun. You acknowledge and agree that Coniun is not responsible for third party materials,
-          links and information, including their accuracy, completeness, reliability, validity, copyright compliance,
-          legality, decency, quality, or any other aspect thereof.</span></p>
-        <p className="c1"><span className="c4 c0">Termination</span></p>
-        <p className="c1" id="h.30j0zll"><span className="c2">These Terms will continue to apply to you until terminated by either
-          you or Coniun. However, you acknowledge and agree that the provisions about Privacy, Intellectual Property,
-          Disclaimer of Warranties, Indemnification, and Limitation of Liability are irrevocable and will therefore
-          continue after termination of these Terms.</span></p>
-        <p className="c1"><span className="c2">Coniun may terminate these Terms or suspend your access to the Service or your
-          account at any time, without prior notice or liability, for any reason including but not limited to the
-          breach of these Terms.</span></p>
-        <p className="c1"><span className="c5">You may terminate these Terms at any time, by deleting your account from Settings or
-          by contacting us via support@</span><span className="c5">coniun.io.</span></p>
-        <p className="c1"><span className="c2">If any provision of these Terms is held to be invalid or unenforceable by a court,
-          the remaining provisions of these Terms will remain in effect. These Terms and our Privacy Policy constitute
-          the entire agreement between us regarding our Service, and supersede and replace any prior agreements we
-          might have had between us regarding the Service.</span></p>
-        <p className="c1"><span className="c2">Our failure to enforce any right or provision of these Terms will not be considered a
-          waiver of those rights.</span></p>
-        <p className="c1"><span className="c4 c0">Indemnification</span></p>
-        <p className="c1"><span className="c2">You agree to defend, indemnify and hold harmless Coniun and its licensee and
-          licensors, and their employees, contractors, agents, officers and directors, from and against any and all
-          claims, damages, obligations, losses, liabilities, costs or debt, and expenses (including but not limited to
-          attorney's fees), resulting from or arising out of (1) your breach of these Terms; (2) any content you
-          shared or transferred; (3) any activity in which you engage on or through your account; and (4) your
-          violation of any law or the rights of a third party.</span></p>
-        <p className="c1"><span className="c4 c0">Limitation of Liability</span></p>
-        <p className="c1"><span className="c2">In no event shall Coniun, nor its directors, employees, partners, agents, suppliers,
-          or affiliates, be liable for any indirect, incidental, special, consequential or punitive damages, including
-          without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from (i)
-          your access to or use of or inability to access or use the Service; (ii) any conduct or content of any third
-          party on the Service; (iii) any content obtained from the Service; and (iv) unauthorized access, use or
-          alteration of your transmissions or content, whether based on warranty, contract, tort (including
-          negligence) or any other legal theory, whether or not we have been informed of the possibility of such
-          damage, and even if a remedy set forth herein is found to have failed of its essential purpose.</span></p>
-        <p className="c1"><span className="c4 c0">Disclaimer of Warranties</span></p>
-        <p className="c1"><span className="c2">CONIUN WILL REASONABLY ENDEAVOUR TO ENSURE THAT THE SERVICE IS AVAILABLE AND
-          ACCESSIBLE, HOWEVER, CONIUN DOES NOT GIVE ANY GUARANTEE OR ASSURANCE THAT THE SERVICE WILL ALWAYS BE
-          AVAILABLE, ACCESSIBLE, CORRECT OR UP TO DATE. SERVICE IS OFFERED WITHOUT ANY KIND OF WARRANTY, ON AN
-          "AS IS" AND "AS AVAILABLE" BASIS. CONIUN IS NOT OBLIGATED TO ENSURE THAT THE SERVICE CAN
-          BE ACCESSED AT ALL TIMES WITHOUT ANY INTERRUPTIONS, FAULTS OR MALFUNCTIONS.</span></p>
-        <p className="c1"><span className="c2">CONIUN DOES NOT WARRANT OR GUARANTEE THAT THE PLATFORM WILL MEET ALL THE REQUIREMENTS
-          OF USERS; BE NONSTOP, UP-TO-DATE, CURRENT, SECURE AND ERROR-FREE; AND ALSO, DOES NOT WARRANT OR GUARANTEE
-          THAT THE RESULTS OBTAINED BY USING THE SERVICE WILL BE ACCURATE OR RELIABLE OR THE DEFECTS WILL BE
-          CORRECTED.</span></p>
-        <p className="c1"><span className="c2">YOU ACKNOWLEDGE THAT THE USE OF THE SERVICE IS PROVIDED OVER THE INTERNET AND MOBILE
-          NETWORKS, THEREFORE THE AVAILABILITY AND QUALITY OF THE SERVICE MAY BE AFFECTED BY FACTORS OUTSIDE OF THE
-          ACCEPTABLE CONTROL OF CONIUN.</span></p>
-        <p className="c1"><span className="c2">CONIUN SHALL ENDEAVOUR TO ENSURE THE ACCURACY OF THE INFORMATION IN THE PLATFORM,
-          HOWEVER CONIUN SHALL NOT BE RESPONSIBLE FOR INCOMPLETE, MISSING, WRONG OR INCORRECT INFORMATION.</span></p>
-        <p className="c1"><span className="c5">YOU ACKNOWLEDGE THAT THE PERFORMANCE OF THE SERVICE IS DIRECTLY LINKED TO THE
-          PERFORMANCE OF THIRD-PARTY SERVICES. CONIUN DISCLAIMS ALL RESPONSIBILITY OF FAILURES IN THE PERFORMANCE OF
-          THE SERVICE, CAUSED BY NONPERFORMANCE OF THIRD-PARTY SERVICES. SINCE CONIUN PROVIDES ITS SERVICE THROUGH
-          SOCIAL MEDIA PLATFORMS, DIGITAL ASSET MARKETPLACES AND</span><span>&nbsp;</span><span className="c2">ELECTRONIC
-            WALLET PROVIDERS, ANY TECHNICAL ISSUE CAUSED BY ANY SAID THIRD PARTY MAY AFFECT THE SERVICE. CONIUN DOES NOT
-            BEAR ANY LIABILITY REGARDING SUCH MATTER.</span></p>
-        <p className="c1"><span className="c2">YOU ACKNOWLEDGE THAT NO CONTENT ON THE SERVICE IS DESIGNED FOR THE SPECIFIC NEEDS OF
-          ANY INDIVIDUALS, ORGANIZATION, ENTITY OR GROUP OF INDIVIDUALS.</span></p>
-        <p className="c1"><span className="c2">YOU MAY USE THE DATA/CONTENT COLLECTED AND DISPLAYED SOLELY FOR INFORMATIONAL
-          PURPOSES. YOU UNDERSTAND AND ACKNOWLEDGE THAT SUCH DATA/CONTENT MAY NOT BE EXHAUSTIVE AND THE ANALYSIS OF
-          THE DATA/CONTENT IS BASED ON WHAT THIRD-PARTY DATA SOURCES PROVIDE TO CONIUN. THE DATA/CONTENT IS BASED ON
-          PUBLICLY AVAILABLE DATA/CONTENT AND CONIUN DOES NOT VERIFY THE ACCURACY OF DATA/CONTENT PROVIDED BY SUCH
-          THIRD PARTIES. ANY USE OF THE DATA/CONTENT EXCEPT AS SPECIFICALLY DESCRIBED HEREIN IS AT YOUR OWN
-          RISK.</span></p>
-        <p className="c1"><span className="c4 c0">Force Majeure</span></p>
-        <p className="c1"><span className="c2">Coniun shall not be liable for any failure or delay in the performance of its
-          obligations occurring by reason of circumstances beyond its control, including but not limited to strikes,
-          work stoppages, accidents, fires, explosions, acts of war or terrorism, civil or military disturbances,
-          embargoes, epidemic, nuclear or natural catastrophes or acts of God, and interruptions, loss or malfunctions
-          of utilities, power supply, communications, or computer (software and hardware) services.</span></p>
-        <p className="c1"><span className="c4 c0">Governing Law</span></p>
-        <p className="c1"><span className="c2">These Terms shall be governed and construed in accordance with the laws of the State
-          of Delaware, United States, without regard to its conflict of law provisions.</span></p>
-        <p className="c1"><span className="c4 c0">Changes</span></p>
-        <p className="c1"><span className="c2">We reserve the right to revise, amend or otherwise change these Terms without prior
-          notice to you. You acknowledge and agree that it is your responsibility to review these Terms periodically
-          for changes. You waive any right you may have to receive a notice of such changes. Your continued use of the
-          Service after the effective date of such change will constitute your consent to the revised, amended, or
-          otherwise changed Terms. If you do not agree to the changes, you must stop using the Service.</span></p>
-        <p className="c1"><span className="c4 c0">Contact Us</span></p>
-        <p className="c1"><span className="c5">If you have any questions about these Terms, please contact us via
-          support@</span><span className="c5">coniun.io</span><span className="c2">.</span></p>
-        <p className="c9"><span className="c4 c10"></span></p>
+        <p className="c1"><span className="c0">Use of Your 	Data</span></p>
+        <p className='c1'>We may use your personal data for the following purposes:</p>
+        <p className="c1"><span className="c0">Alpha Research Tools User</span></p>
+        <ul className="c8 lst-kix_list_1-0 start">
+          <li className="c3 li-bullet-0">to provide and maintain our Services;</li>
+          <li className="c3 li-bullet-0">to fulfil our contractual obligations to you and anyone involved in the process;</li>
+          <li className="c3 li-bullet-0">to identify and resolve errors, problems or bugs in our Services;</li>
+          <li className="c3 li-bullet-0">to allow you to participate in interactive features of our Services when you choose;</li>
+          <li className="c3 li-bullet-0">to review your requests, suggestions and complaints regarding our Services and provide user support;</li>
+          <li className="c3 li-bullet-0">to retain and evaluate information on your recent visits to our website and how you   move   around   different   sections   of   our website for   analytics   purposes   to understand how people use our website so that we can make it more intuitive;</li>
+          <li className="c3 li-bullet-0">to improve and personalize our Services based on your needs, requests and suggestions;</li>
+          <li className="c3 li-bullet-0">to contact you for marketing purposes and promote our services (including push notifications).</li>
+        </ul>
+        <p className="c1"><span className="c0">Social Media Platform User</span></p>
+        <ul className="c8 lst-kix_list_1-0 start">
+          <li className="c3 li-bullet-0">to provide our Services to the Alpha Research Tools Users by sending them statistical information on NFTs, digital items and crypto collectibles;</li>
+          <li className="c3 li-bullet-0">to contact you for marketing purposes if you publicly disclose your Social Media Platform account. In such case, you will always have a chance to opt out of such marketing communications (See the Section 6).</li>
+        </ul>
+        <p className="c1"><span className="c0">4.Legal Basis for Processing</span></p>
+        <p className='c1'>We rely on the following legal bases for processing your data:</p>
+        <p className="c1"><span className="c0">Alpha Research Tools User</span></p>
+        <ul className="c8 lst-kix_list_1-0 start">
+          <li className="c3 li-bullet-0">You have given consent to the processing of your personal data for one or more specific purposes,</li>
+          <li className="c3 li-bullet-0">Processing is necessary for the performance of our contract,</li>
+          <li className="c3 li-bullet-0">Processing is necessary for compliance with a legal obligation to which we are subject,</li>
+          <li className="c3 li-bullet-0">Processing is necessary for the purposes of our legitimate interests, provided always that such interests are not overridden by your interests or fundamental rights and freedoms which require protection of personal data.</li>
+        </ul>     
+        <p className='c1'>We have a legitimate interest in improving and personalizing our Services based on your needs, requests and suggestions, retaining and evaluating information on your recent visits to our website and how you move around different sections of our website, and contacting you for marketing purposes and promote our services (Recital 47 GDPR), without affecting your fundamental rights and freedoms.</p>  
+        <p className='c1'><span className='c0'>Social Media Platform User</span></p>
+        <ul className="c8 lst-kix_list_1-0 start">
+          <li className="c3 li-bullet-0">Processing is necessary for the purposes of our legitimate interests, provided always that such interests are not overridden by your interests or fundamental rights and freedoms which require protection of personal data.</li>
+        </ul>
+        <p className='c1'><span className='c0'>Disclosure of Your Personal Data</span></p>
+        <p className='c1'>We disclose your personal data,</p>
+        <p className='c1'><span className='c0'>Alpha Research Tools Users</span></p>
+        <ul className="c8 lst-kix_list_1-0 start">
+          <li className="c3 li-bullet-0">with service providers, business partners and solution partners for the purposes specified in the Section 3 (e.g., to perform our contractual obligations, to provide you with more efficient and personalized Services, to identify and resolve errors, problems or bugs in our Services, to review your requests, suggestions and complaints regarding our Services and provide user support etc. For more information, please see the Section 12);</li>
+          <li className="c3 li-bullet-0">with government and regulatory authorities and other organizations to meet legal and regulatory requirements, or to protect or defend our rights or property in accordance with applicable laws.</li>
+        </ul>
+        <p className='c1'><span className='c0'>Social Media Platform or Marketplace Users</span></p>
+        <ul className="c8 lst-kix_list_1-0 start">
+          <li className="c3 li-bullet-0">with the Alpha Research Tools Users for the provision of our Services to them. (We only disclose them to Alpha Research Tools Users who registered with the Alpha Research Tools Platform)</li>
+          <li className="c3 li-bullet-0">with government and regulatory authorities and other organizations to meet legal and regulatory requirements, or to protect or defend our rights or property in accordance with applicable laws.</li>
+        </ul>
+        <p className='c1'>For the compliance with the GDPR, we ensure that our suppliers and business or solution partners whether they are located outside the EEA or not, takes appropriate technical and organizational security measures in accordance with applicable data protection laws and use it solely for the purposes specified by us.</p>
+        <p className='c1'><span className='c0'>Marketing</span></p>
+        <p className='c1'>We may occasionally communicate news, updates, promotions and information relating to our products and services. We shall only do this where you have given us your consent or otherwise where we are permitted to do so under the data protection laws in pursuit of our legitimate interests.</p>
+        <p className='c1'>We may share personal data with third parties to help us with our marketing and promotional projects or sending marketing communications.</p>
+        <p className='c1'>If you want to opt out of receiving promotional and marketing emails, text messages, posts and other forms of communication from us (or our promotional partners), which you might receive in accordance with this section, you can choose one of the following ways:</p>
+        <ul className="c8 lst-kix_list_1-0 start">
+          <li className="c3 li-bullet-0">Click “unsubscribe” at the bottom of an email we sent you; or</li>
+          <li className="c3 li-bullet-0">Contact us at support@alpharesearch.tools and request to opt out.</li>
+        </ul>
+        <p className='c1'>If you do opt out of receiving promotional and marketing messages, we will no longer use or transfer your personal data to third parties for direct marketing purposes. We would like to remind you that we may continue to send transactional or administrative e-mails (e.g. account status and activity updates, respond to your inquiries or complaints etc.)  related to our services or your requests for information or materials, even you opt out.</p>
+        <p className='c1'><span className='c0'>Retention of Your Personal Data</span></p>
+        <p className='c1'>We securely store your personal data in the United States. We take all the necessary measures to ensure that your data is treated securely and in accordance with this Privacy Policy and no transfer of your personal data will take place to an organisation or a country unless stated in this Privacy Policy and there are adequate controls in place including the security of your data and other personal information.</p>
+        <p className='c1'>We will retain your personal data only for as long as they are necessary for the purposes set out in this Privacy Policy. If we no longer have a legal basis or a purpose for processing your personal data, we delete such personal data.</p>
+        <p className='c1'><span className='c0'>Your Rights</span></p>
+        <p className='c1'>If you are from the European Economic Area or in certain countries, you are also entitled (with some exceptions and restrictions) to:</p>
+        <ul className="c8 lst-kix_list_1-0 start">
+          <li className="c3 li-bullet-0"><span className='c0'>Access:</span> You have the right to request information about how we process your personal data and to obtain a copy of that personal data.</li>
+          <li className="c3 li-bullet-0"><span className='c0'>Rectification:</span> You have the right to request the rectification of inaccurate personal data about you and for any incomplete personal information about you to be completed.</li>
+          <li className="c3 li-bullet-0"><span className='c0'>Objection: </span>You have the right to object to the processing of your personal information, which is based on our legitimate interests.</li>
+          <li className="c3 li-bullet-0"><span className='c0'>Deletion: </span>You can delete your account by using the corresponding functionality directly on the service.</li>
+          <li className="c3 li-bullet-0"><span className='c0'>Automated decision-making: </span>You have the right to object a decision made about you that is based solely on automated processing if that decision produces legal or similarly significant effects concerning you.</li>
+          <li className="c3 li-bullet-0"><span className='c0'>Restriction: </span>You have the right to ask us to restrict our processing of your personal data, so that we no longer process that personal data until the restriction is lifted.</li>
+          <li className="c3 li-bullet-0"><span className='c0'>Portability: </span>You have the right to receive your personal data, which you have provided to us, in a structured, commonly used and machine-readable format and to have that personal data transmitted to another organization in certain circumstances.</li>
+          <li className="c3 li-bullet-0"><span className='c0'>Complaint: </span>You have a right to lodge a complaint with the authorized data protection authority if you have concerns about how we process your personal data. The data protection authority you can lodge a complaint with notably may be that of your habitual residence, where you work or where we are established.</li>
+        </ul>
+        <p className='c1'>You may, at any time, exercise any of the above rights, by contacting us via support@alpharesearch.tools together with a proof of your identity, i.e. a copy of your ID card, or passport, or any other valid identifying document.</p>
+        <p className='c1'>In some cases, we may not be able to give you access to your personal data that we hold, if making such a disclosure would breach our legal obligations to our other Alpha Research Tools Users or if prevented by any applicable law or regulation.</p>
+        <p className='c1'>The Social Media Platform or Marketplace Users also have the right to request information about the Alpha Research Tools User who received their own personal data, and we will reasonably provide you with all information about the Alpha Research Tools User.</p>
+        <p className='c1'><span className='c0'>Additional Information for Residents of the State of California (USA)</span></p>
+        <p className='c1'>Under the California Consumer Privacy Act of 2018 (“<span className='c0'>CCPA</span>”), specific disclosures are required and California residents have additional rights regarding their personal information. Please review this section to learn more.</p>
+        <p className='c1'><span className='c0'>Categories of Personal Information We Collect</span></p>
+        <p className='c1'>Category of Personal Information</p>
+        <p className='c1'>Categories of Sources from Which Personal Information Was Collected</p>
+        <p className='c1'>Business or Commercial Purpose for Processing</p>
+        <p className='c1'> <span className='c0'>Identifiers</span> </p>
+        <p className='c1'>which include elements such as: (i) contact information (e.g., name, email address, phone number); and (ii) online identifiers (e.g., Internet protocol (IP) address, account name, account photo, account numbers, device identifiers such as mobile advertising IDs) - Directly from you - From cookies and similar technologies - From third-party data suppliers and business partners - From Social Media Platforms, Marketplaces and similar services - To provide our Services - To communicate with you - For advertising and marketing purposes for us or third-parties, including interest-based advertising - To improve our Services and platforms. - To protect our or others’ rights</p>
+        <p className='c1'><span className='c0'>Customer records information:</span></p>
+        <p className='c1'>(e.g., payment information) - Directly from you -To provide our Services - To protect our or others’ rights</p>
+        <p className='c1'><span className='c0'>Commercial Information</span></p>
+        <p className='c1'>which includes elements such as transactional information (e.g., activity, subscriptions, requests, purchases, items in your cart but not completed purchases, wallet address, NFT, digital item or crypto collectibles activity)	- Directly from you - From cookies and similar technologies From third-party data suppliers and business partners - From Social Media Platforms, Marketplaces and similar services	-To provide our Services - To communicate with you - For advertising and marketing purposes for us or third-parties, including interest-based advertising - To improve our Services and platforms. - To protect our or others’ rights</p>
+        <p className='c1'><span className='c0'>Internet or other electronic network activity</span></p>
+        <p className='c1'>which includes elements such as information about how you use, access, or interact with the Services such as comment and other content you choose to publish on the Services, information about your browser type, browser version, the pages of our Service that visited, the time and date of visit, the time spent on those pages	-  From cookies and similar technologies
+- From third-party data suppliers and business partners
+- From Social Media Platforms, Marketplaces and similar services	- To provide you with and to improve the Services
+- To communicate with you
+- For advertising and marketing purposes for us or third-parties, including interest-based advertising
+- To protect our or others’ rights</p>
+        <p className='c1'><span className='c0'>Inferences </span></p>
+        <p className='c1'>drawn from any of these personal information categories (e.g., interest in services, such as based on feedback and customer support)	-  From cookies and similar technologies
+- From Social Media Platforms, Marketplaces and similar services	- To provide you with and to improve the Services
+- To provide Customer support and feedback
+- For advertising and marketing purposes for us or third-parties, including interest-based advertising
+- To improve our Services and platforms.</p>
+        <p className='c1'><span className='c0'>Your Rights</span></p>
+        <p className='c1'><span className='c0'>Access</span></p>
+        <p className='c1'>You may request access to the personal information that we have collected and maintained about you (along with information regarding its use and disclosure) over the past twelve (12) months upon appropriate verification. You may only make such requests twice (2) per every twelve (12) months.</p>
+        <p className='c1'><span className='c0'>Deletion</span></p>
+        <p className='c1'>You have the right to request that we delete personal information collected and maintained about you, subject to certain exceptions. Once your request is verified and we have determined that we are required to delete that information in accordance with applicable law, we will delete your personal information accordingly. Your request to delete your personal information may be denied if it is necessary for us to retain your information under one or more of the exceptions listed in the CCPA. Please note that a record of your deletion request may be kept pursuant to our legal obligations.</p>
+        <p className='c1'><span className='c0'>Your California Privacy Rights under the "Shine the Light" Law</span></p>
+        <p className='c1'>If you are a California resident, you have the right to request certain information from us regarding our information-sharing practices with third parties for direct marketing purposes. To the extent that we share your personal information for direct marketing purposes, you may receive the following information: (1) the categories of information and sources of information that we disclosed to third parties for direct marketing purposes during the preceding year; and (2) the names and address information of third parties that received such information, or if the nature of their business cannot be determined from the name, the examples of the products or services marketed.</p>
+        <p className='c1'>To the extent that we sell your personal information to third parties, you also have the right to request that we disclose to you: (i) the categories of your personal information that we sold, and (ii) the categories of third parties to whom your personal information was sold. You also have the right to direct us not to sell your personal information.</p>
+        <p className='c1'><span className='c0'>Verifying Your Request</span></p>
+        <p className='c1'>Only you, or a person that you authorize to act on your behalf, may make a request related to your personal information. In the case of access and deletion, your request must be verifiable before we can fulfill such request.</p>
+        <p className='c1'>Verifying your request will require you to provide sufficient information for us to reasonably verify that you are the person about whom we collected personal information or a person authorized to act on your behalf (e.g., previous transactions of person to whom request relates).</p>
+        <p className='c1'>We will only use the personal information that you have provided in a verifiable request in order to verify your request. As stated above, we cannot respond to your request or provide you with personal information if we cannot verify your identity or authority.</p>
+        <p className='c1'>Please note that we may charge a reasonable fee or refuse to act on a request if such request is excessive, repetitive, or manifestly unfounded</p>
+        <p className='c1'>You may also designate an authorized agent to make a request to access or delete on your behalf. Your authorized agent must submit proof that you have provided them with power of attorney pursuant to Probate Code sections 4000 through 4465. We may deny a request from a purported authorized agent who does not provide proof of authorization to act on your behalf.</p>
+        <p className='c1'><span className='c0'>Non-Discrimination</span></p>
+        <p className='c1'>We will not discriminate against any consumer that asserts their rights under the CCPA. We will not: (1) deny you goods or services; (2) charge you different prices or rates for goods or services, including through granting discounts or other benefits, or imposing penalties; (3) provide you a different level of qualify of goods or services; or (4) suggest that you may receive a different price or rate for goods or services or a different level of quality of goods or services.</p>
+        <p className='c1'><span className='c0'>Right to withdraw consent</span></p>
+        <p className='c1'>If you have provided your consent to the collection, processing and transfer of your personal data, you have the right to fully or partly withdraw your consent. To withdraw your consent please contact us via <a href="mailto: support@alpharesearch.tools">support@alpharesearch.tools</a></p>
+        <p className='c1'>Once we have received notification that you have withdrawn your consent, we will no longer process your information for the purpose(s) to which you originally consented unless there are compelling legitimate grounds for further processing which override your interests, rights and freedoms or for the establishment, exercise or defence of legal claims.</p>
+        <p className='c1'><span className='c0'>Collection of Children’s Personal Data</span></p>
+        <p className='c1'>We do not knowingly collect personal data from children under the age of 13.  We encourage parents and legal guardians to monitor their children's Internet usage and to help enforce our Privacy Policy by instructing their children to never provide us personal data without their permission. If you have any concerns about your child’s privacy with respect to our services, or if you believe that your child may have provided his/her personal data to us, please contact us via support@alpharesearch.tools. We ensure to delete such personal data from our records immediately.</p>
+        <p className='c1'><span className='c0'>DISCLAIMER:</span> When processing open data from social networks and marketplaces, it might be reasonably impossible to recognize the real age of users. Our verification of the age of users is limited to technically available and reasonable treatment of the information openly provided by the social networks and marketplaces from which we collect the data. In case of fallacious, erroneous or missing age data, the social networks shall be solely responsible for violation of requirements of the GDPR and other data protection laws in relation to the personal data of children.</p>
+        <p className='c1'><span className='c0'>Tracking & Cookies Data</span></p>
+        <p className='c1'>We use cookies and similar tracking technologies to track the activity on our Service and we hold certain information.</p>
+        <p className='c1'>Cookies are files with a small amount of data which may include an anonymous unique identifier. Cookies are sent to your browser from a website and stored on your device. Other tracking technologies are also used such as beacons, tags and scripts to collect and track information and to improve and analyse our Service.</p>
+        <p className='c1'>You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our Service.</p>
+        <p className='c1'>Examples of Cookies we use:</p>
+        <ul className="c8 lst-kix_list_1-0 start">
+          <li className="c3 li-bullet-0"><span className='c0'>Session Cookies.</span>We use Session Cookies to operate our Service.</li>
+          <li className="c3 li-bullet-0"><span className='c0'>Preference Cookies. </span>We use Preference Cookies to remember your preferences and various settings.</li>
+          <li className="c3 li-bullet-0"><span className='c0'>Security Cookies. </span>We use Security Cookies for security purposes.</li>
+        </ul>
+        <p className='c1'><span className='c0'>Service Providers</span></p>
+        <p className='c1'>We may employ third party companies and individuals to facilitate our Service ("Service Providers"), provide the Service on our behalf, perform Service-related services or assist us in analysing how our Service is used.</p>
+        <p className='c1'>These third parties have access to your personal data only to perform these tasks on our behalf and are obligated not to disclose or use it for any other purpose. We may use such third-party Service Providers for the following purposes:</p>
+        <p className='c1'><span className='c0'>Analytics</span></p>
+        <p className='c1'>We may use third-party Service Providers to monitor and analyse the use of our Service. Such third-party Service Providers:</p>
+        <ul className="c8 lst-kix_list_1-0 start">
+          <li className="c3 li-bullet-0">help us to understand how our Alpha Research Tools Users experience our Services by tracking their movements around our Platform;</li>
+          <li className="c3 li-bullet-0">track and monitor website traffic and use of our Services;</li>
+          <li className="c3 li-bullet-0">collect usage and behavioural information about our Alpha Research Tools Users and provide financial analysis to make profitable decisions that enhance our Services and business.</li>
+        </ul>
+        <p className='c1'><span className='c0'>Payments</span></p>
+        <p className='c1'>We may provide paid products and/or services within the Service. In that case, we use third-party services for payment processing (e.g. payment processors).</p>
+        <p className='c1'>We will not store or collect your payment card details. That information is provided directly to our third-party payment processors whose use of your personal information is governed by their Privacy Policy. These payment processors adhere to the standards set by PCI-DSS as managed by the PCI Security Standards Council, which is a joint effort of brands like Visa, MasterCard, American Express and Discover. PCI-DSS requirements help ensure the secure handling of payment information.</p>
+        <p className='c1'>The payment processors we work with are:</p>
+        <ul className="c8 lst-kix_list_1-0 start">
+          <li className="c3 li-bullet-0"><span className='c0'>Stripe</span>Their Privacy Policy can be viewed at https://stripe.com/us/privacy</li>
+          <li className="c3 li-bullet-0"><span className='c0'>PayPal / Braintree</span>Their Privacy Policy can be viewed at <a href="https://www.paypal.com/webapps/mpp/ua/privacy-full">https://www.paypal.com/webapps/mpp/ua/privacy-full</a></li>
+        </ul>
+        <p className='c1'><span className='c0'>Links to Other Sites</span></p>
+        <p className='c1'>Our Service may contain links to other sites that are not operated by us. If you click a third party link, you will be directed to that third party's site. We strongly advise you to review the Privacy Policy of every site you visit.</p>
+        <p className='c1'>We have no control over and assume no responsibility for the content, privacy policies or practices of any third party sites or services.</p>
+        <p className='c1'><span className='c0'>Changes to This Privacy Policy</span></p>
+        <p className='c1'>We reserve the right to update and change this Policy from time to time in order to reflect any changes to the way in which we process your personal data or changing legal requirements. Any changes we may make to our Policy in the future will be posted on this page and, where appropriate, notified to you by e-mail or push notification. We also recommend you check back frequently to see any updates or changes to our Policy.</p>
+        <p className='c1'><span className='c0'>Contact Us</span></p>
+        <p className='c1'>If you have any questions about this Privacy Policy, please contact us, by email: support@alpharesearch.tools.</p>
       </div>
     </Fragment>
   )
