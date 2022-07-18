@@ -15,6 +15,8 @@ import ReactPaginate from "react-paginate";
 import { useDispatch } from "react-redux";
 import { projectActions } from "../../store/project/project";
 import Router from "next/router";
+import { useSelector } from "react-redux";
+import { selectApplyFilter, selectMaxEbCOunt, selectMaxFollowers, selectMinEbCOunt, selectMinFollowers } from "../../store/project/selector";
 
 export function MyVerticallyCenteredModal(
   props: JSX.IntrinsicAttributes &
@@ -60,18 +62,24 @@ export function MyVerticallyCenteredModal(
         <Modal.Footer>
           <Button onClick={props.onHide}>Close</Button>
         </Modal.Footer> */}
-      <Filter />
+      <Filter onHide={props.onHide} />
     </Modal>
   );
 }
 
 const Project = () => {
   const dispatch = useDispatch();
+  const applyFilter = useSelector(selectApplyFilter)
+  const minEbcount = useSelector(selectMinEbCOunt)
+  const maxEbcount = useSelector(selectMaxEbCOunt)
+  const minFollowers = useSelector(selectMinFollowers)
+  const maxFollowers = useSelector(selectMaxFollowers)
 
   const [modalShow, setModalShow] = React.useState(false);
   const [projects, setProjects] = useState<any>([]);
   const [loading, setLoading] = useState<boolean>();
   const [searchValue, setSearchValue] = useState(""); 
+
   const [state, setState] = useState<any>({
     current_page: 1,
     pages: 1,
@@ -91,6 +99,8 @@ const Project = () => {
         page: page,
         resPerPage: state.per_page,
         search: searchValue,
+        minFollowers: minFollowers,
+        maxFollowers: maxFollowers
       });
       setProjects(res?.data?.data?.projects);
       setState({
@@ -133,7 +143,7 @@ const Project = () => {
 
   useEffect(() => {
     getProjects();
-  }, []);
+  }, [applyFilter]);
 
   return (
     <Fragment>

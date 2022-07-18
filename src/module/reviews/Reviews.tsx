@@ -14,7 +14,6 @@ export default function Reviews() {
 
   useEffect(() => {}, [currentProject]);
 
-  console.log(user, "user=-=-=-=-");
   return (
     <Fragment>
       <Header />

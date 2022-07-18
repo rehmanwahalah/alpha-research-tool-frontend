@@ -2,7 +2,7 @@ import axios from "axios";
 import next from "next";
 import { signIn, signOut, useSession } from "next-auth/react";
 import Link from "next/link";
-import { useRouter } from "next/router";
+import Router, {  useRouter } from "next/router";
 import { env } from "process";
 import { useDispatch } from "react-redux";
 import TwitterLogin from "react-twitter-login";
@@ -56,7 +56,7 @@ export default function Login() {
               {/* <input type="checkbox" id="checkbox" name="checkbox" /> */}
               <label htmlFor="checkbox" className="text-center">
                 <p>By clicking the button below, you agree to</p>
-                <p>Alpha research Tools <Link href=""><a>Terms of services</a></Link> and <Link href="">Privacy policy</Link>.</p>
+                <p>Alpha research Tools <Link href="/terms-and-conditions"><a>Terms of services</a></Link> and <Link href="/privacy-policy"> Privacy policy</Link>.</p>
               </label>
             </div>
             {false ? (
