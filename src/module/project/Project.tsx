@@ -225,7 +225,7 @@ const Project = () => {
                             </span>
                           </div>
                         </td>
-                        <td>{project.bio}</td>
+                        <td><span>{project.bio}</span></td>
                         <td>{project.ebCount}</td>
                         <td>{project.notableFollowersCount}</td>
                         <td>{project.notableFollowers}</td>

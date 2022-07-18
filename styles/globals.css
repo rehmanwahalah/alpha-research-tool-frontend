@@ -283,6 +283,13 @@ table.rt-themetable > thead > tr > th{
 	border-right: 1px solid #34465D;
 }
 table.rt-themetable > thead > tr > th:last-child{border-radius: 0;}
+table.rt-themetable > tbody > tr > td span{
+	text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+	width: 240px;
+	display: block;
+}
 table.rt-themetable > tbody > tr > td{
 	color: #fff;
 	font-size: 20px;
@@ -595,17 +602,23 @@ table > tfoot > tr > td {
 }
 .rt-userimage span,
 .rt-userimage img{
-	display: inline-block;
+	display: inline-block !important;
 	vertical-align: middle;
+}
+.rt-userimage img{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
 }
 .rt-userimage span{
 	padding: 0 0 0 10px;
+	width: calc(100% - 40px) !important;
 }
 .rt-followerchange{
 	padding: 0 !important;
 }
 .rt-followerchange span{
-	width: 50%;
+	width: 50% !important;
 	text-align: center;
 	float: left;
 	padding: 23px 0;
@@ -663,6 +676,8 @@ table > tfoot > tr > td {
 .rt-reviewhead{
 	width: 55%;
 	float: right;
+	overflow: auto;
+	height: calc(100vh - 340px);
 }
 .rt-reviewheading{
 	width: 100%;
@@ -742,6 +757,7 @@ table > tfoot > tr > td {
 }
 .rt-reviewfilterdetail li span + span{
 	color: #fff;
+	word-break: break-word;
 }
 /* .rt-reviewfilterdetail + .rt-reviewfilterdetail{} */
 .rt-btndropdown{
@@ -1294,7 +1310,7 @@ table > tfoot > tr > td {
 }
 
 .c0 {
-	font-size: 12pt;
+	font-size: 14pt;
 	font-family: "Times New Roman";
 	font-weight: 700
 }
