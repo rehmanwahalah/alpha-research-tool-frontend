@@ -472,10 +472,11 @@ table > tfoot > tr > td {
 .rt-logo a img{display: block;}
 .rt-logo a img{
 	width: 100%;
+	border-radius: 0;
 	height: auto;
 }
 .rt-searchform{
-	width: 800px;
+	width: 100%;
 	float: left;
 	/* padding: 11px 0; */
 	/* margin: 0 0 0 52px; */
@@ -487,6 +488,7 @@ table > tfoot > tr > td {
 }
 .rt-searchform .rt-formtheme .form-group{
 	padding: 0;
+	margin: 0 0 20px;
 	position: relative;
 }
 .rt-searchform .rt-formtheme .form-group a{
@@ -543,18 +545,19 @@ table > tfoot > tr > td {
 	width: 100%;
 	float: left;
 	/* padding: 0 0 30px; */
-	background: #22364D;
+	/* background: #22364D; */
 }
-.rt-filterholder .rt-formtheme .form-group{padding: 10px 20px;}
+.rt-filterholder .rt-formtheme .form-group{padding: 10px 0;}
 .rt-filterholder .rt-formtheme .form-group label{
-	width: 174px;
-	display: inline-block;
-	vertical-align: middle;
+	width: 100%;
+	float: left;
+	font-size: 16px;
+	line-height: 20px;
+	padding: 0 0 10px;
 }
 .rt-filterinput{
-	width: calc(100% - 174px);
-	display: inline-block;
-	vertical-align: middle;
+	width: 100%;
+	float: left;
 }
 .rt-filterinput input{width: 100%;}
 .rt-filterinput .rt-inputwidthfifty{
@@ -822,7 +825,8 @@ table > tfoot > tr > td {
 	padding: 50px 0 50px 30px;
 }
 .rt-navigation{
-	width: 100%;
+	/* width: 100%; */
+	padding: 0 0 0 60px;
 	float: left;
 }
 .rt-navigation .rt-nav ul li{
@@ -1331,3 +1335,50 @@ li.li-bullet-0:before {
 .lst-kix_list_3-0>li:before {
     content: "\0025cf ";
 }
+.rt-arrowsort{
+	padding: 0 0 0 5px;
+	vertical-align: middle;
+	display: inline-block;
+}
+.rt-arrowsort button{
+	display: block;
+	font-size: 12px;
+	background: none;
+	color: #fff;
+}
+.rt-sidebarfilterarea{
+	width: 100%;
+	float: left;
+}
+.rt-sidebarfilterarea .accordion-item{
+	width: 100%;
+	float: left;
+	padding: 0 0 10px;
+	background: none;
+}
+.rt-sidebarfilterarea .accordion-body{
+	width: 100%;
+	float: left;
+	padding: 0;
+}
+.rt-sidebarfilterarea .accordion-header{
+	width: 100%;
+	float: left;
+}
+.rt-sidebarfilterarea .accordion-header button{
+	background: none;
+	color: #fff;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	box-shadow: none;
+	font-size: 20px;
+}
+.rt-sidebarfilterarea .accordion-header button:focus{
+	box-shadow: none;
+}
+.rt-sidebarsearchfilter{
+	width: 100%;
+	float: left;
+	overflow: auto;
+	height: calc(100vh - 280px);
+}
+.rt-sidebarsearchfilter::-webkit-scrollbar{display: none;}

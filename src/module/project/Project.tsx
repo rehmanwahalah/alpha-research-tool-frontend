@@ -116,21 +116,21 @@ const Project = () => {
     }
   };
 
-  function isLetter(str: any) {
-    return (
-      (str.length === 1 && str.match(/[a-z0-9]/i)) ||
-      str.match(/\s/i) ||
-      str.match(/\b/i)
-    );
-  }
+  // function isLetter(str: any) {
+  //   return (
+  //     (str.length === 1 && str.match(/[a-z0-9]/i)) ||
+  //     str.match(/\s/i) ||
+  //     str.match(/\b/i)
+  //   );
+  // }
 
-  const handleChange = (event: any) => {
-    if (event.target.value.length > 1) {
-      if (isLetter(event.target.value)) setSearchValue(event.target.value);
-    } else {
-      setSearchValue("");
-    }
-  };
+  // const handleChange = (event: any) => {
+  //   if (event.target.value.length > 1) {
+  //     if (isLetter(event.target.value)) setSearchValue(event.target.value);
+  //   } else {
+  //     setSearchValue("");
+  //   }
+  // };
 
   const handlePagination = (data: any) => {
     getProjects(data.selected + 1);
@@ -164,7 +164,7 @@ const Project = () => {
             <h3>Total Projects = {state.total_projects}</h3>
           </div>
           <div className="rt-pagetop">
-            <div className="rt-searchform">
+            {/* <div className="rt-searchform">
               <form className="rt-formtheme">
                 <fieldset>
                   <div className="form-group">
@@ -182,7 +182,7 @@ const Project = () => {
                   </div>
                 </fieldset>
               </form>
-            </div>
+            </div> */}
             <div className="rt-pagefilterholder">
               <Button variant=" " onClick={() => setModalShow(true)}>
                 <i className="icon-equalizer"></i>
@@ -200,8 +200,17 @@ const Project = () => {
               <thead>
                 <tr>
                   <th>Project</th>
-                  <th>Bio</th>
-                  <th>Eb count </th>
+                  <th>Username</th>
+                  <th>Eb count 
+                    <span className="rt-arrowsort">
+                      <button>
+                        <i className="icon-arrow-up"></i>
+                      </button>
+                      <button>
+                        <i className="icon-arrow-down"></i>
+                      </button>
+                    </span> 
+                  </th>
                   <th>Notable Followers Count</th>
                   <th>Notable Followers</th>
                   <th>Followers</th>
@@ -220,12 +229,17 @@ const Project = () => {
                           <div onClick={()=>{handleProjectSelect(project)}} className="rt-userimage">
                             <img src="../../images/1.png" />
                             {/* <img src={project ? project.image : "../../images/1.png"} /> */}
-                            <span>
+                            <span title="enter project name">
                               {project.name ? project.name : project.title}
                             </span>
                           </div>
                         </td>
-                        <td><span>{project.bio}</span></td>
+                        {/* <td><span>{project.bio}</span></td> */}
+                        <td>
+                          <span title="SajidAliAs">
+                            <img src="../../images/twitter.svg" alt="" className="rounded-0"/>
+                          </span>
+                        </td>
                         <td>{project.ebCount}</td>
                         <td>{project.notableFollowersCount}</td>
                         <td>{project.notableFollowers}</td>

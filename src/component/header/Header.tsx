@@ -15,12 +15,12 @@ export default function Header() {
     const user = useSelector(selectUser);
     const token = useSelector(selectAccessToken);
 
-    useEffect(()=>{
-        if(token) HttpService.setToken(token)
-    },[token])
+    useEffect(() => {
+        if (token) HttpService.setToken(token)
+    }, [token])
     const handleLogout = async () => {
         dispatch(logout())
-      };
+    };
     return (
         <header className="rt-header">
             <button className="rt-btnmenu"><i className="icon-menu"></i></button>
@@ -31,6 +31,63 @@ export default function Header() {
                     </a>
                 </Link>
             </strong>
+            <div className="rt-navigation">
+                <nav className="rt-nav">
+                    <ul>
+                        {/* <li>
+                <Link href="/project">
+                  <a>
+                    <i className="icon-Vector"></i>
+                    <span>Dashboard</span>
+                  </a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/project">
+                  <a>
+                    <i className="icon-Group"></i>
+                    <span>Rankings</span>
+                  </a>
+                </Link>
+              </li> */}
+                        <li>
+                            <Link href="/project">
+                                <a>
+                                    <i className="icon-Vector-1"></i>
+                                    <span>Projects</span>
+                                </a>
+                            </Link>
+                        </li>
+                        {
+                            user?.roles.includes("admin") &&
+                            <li>
+                                <Link href="/user">
+                                    <a>
+                                        <i className="icon-Group-28485"></i>
+                                        <span>Users</span>
+                                    </a>
+                                </Link>
+                            </li>
+                        }
+                        {/* <li>
+                <Link href="/project">
+                  <a>
+                    <i className="icon-Group-28486"></i>
+                    <span>Orders</span>
+                  </a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/project">
+                  <a>
+                    <i className="icon-Group-28487"></i>
+                    <span>Blogs</span>
+                  </a>
+                </Link>
+              </li> */}
+                    </ul>
+                </nav>
+            </div>
             <div className="rt-addnavigation">
                 <nav className="rt-nav">
                     <ul>
@@ -55,7 +112,7 @@ export default function Header() {
                         <li>
                             <Dropdown>
                                 <Dropdown.Toggle variant=" rt-btndropdown" id="dropdown-basic">
-                                    <img  src={user?.avatar ? user?.avatar : "../../images/user.png"} alt="user avtar" />
+                                    <img src={user?.avatar ? user?.avatar : "../../images/user.png"} alt="user avtar" />
                                 </Dropdown.Toggle>
 
                                 <Dropdown.Menu>
